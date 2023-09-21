@@ -12,7 +12,9 @@
       </button>
       <div
         class="absolute hidden group-hover:block z-10 w-[900px] -left-20 bg-blue-500 h-[400px] top-[69px]"
-      ></div>
+      >
+        Links will come here
+      </div>
     </div>
     <div class="relative h-full group">
       <button
@@ -22,7 +24,9 @@
       </button>
       <div
         class="absolute hidden group-hover:block z-10 w-[900px] -right-[500px] bg-blue-500 h-[400px] top-[69px]"
-      ></div>
+      >
+        Links will come here
+      </div>
     </div>
     <div class="relative h-full group">
       <button
@@ -32,7 +36,9 @@
       </button>
       <div
         class="absolute hidden lg:hidden group-hover:block z-10 w-[900px] -left-[600px] bg-blue-500 h-[400px] top-[69px]"
-      ></div>
+      >
+        Links will come here
+      </div>
     </div>
     <div class="text-sm font-light">
       <h2 class="font-bold">Sales Line:</h2>
