@@ -1,5 +1,5 @@
 <script setup>
-import removebg from "../images/download-removebg-preview.png";
+import removebg from "../../images/download-removebg-preview.png";
 </script>
 
 <template>
