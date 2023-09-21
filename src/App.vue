@@ -10,7 +10,6 @@ import Partners from "./components/Partners.vue";
 import Articles from "./components/Articles.vue";
 import Reviews from "./components/Reviews.vue";
 import Footer from "./components/Footer.vue";
-import Swiper from "./components/Swiper.vue";
 </script>
 
 <template>

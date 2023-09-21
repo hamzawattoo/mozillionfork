@@ -1,13 +1,21 @@
 <template>
-  <div class="max-w-5xl py-6 m-auto">
+  <div class="flex items-center justify-center max-w-5xl p-2 py-6 m-auto">
     <swiper
-      :slides-per-view="5"
-      :space-between="5"
+      :breakpoints="{
+        300: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        900: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 },
+      }"
+      :controller="inverse"
+      :initial-slide="3"
+      :space-between="12"
+      :centeredSlides="true"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
     >
       <swiper-slide>
-        <div class="w-48 px-4 py-4 bg-white cursor-grab">
+        <div class="px-4 py-4 bg-white lg:lg:w-56 w-96 cursor-grab">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -134,7 +142,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="w-48 px-4 py-4 bg-white cursor-grab">
+        <div class="px-4 py-4 bg-white lg:w-56 w-96 cursor-grab">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -261,7 +269,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="w-48 px-4 py-4 bg-white cursor-grab">
+        <div class="px-4 py-4 bg-white lg:w-56 w-96 cursor-grab">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -388,7 +396,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="w-48 px-4 py-4 bg-white cursor-grab">
+        <div class="px-4 py-4 bg-white lg:w-56 w-96 cursor-grab">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -515,7 +523,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="w-48 px-4 py-4 bg-white cursor-grab">
+        <div class="px-4 py-4 bg-white lg:w-56 w-96 cursor-grab">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -642,7 +650,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="w-48 px-4 py-4 bg-white cursor-grab">
+        <div class="px-4 py-4 bg-white lg:w-56 w-96 cursor-grab">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
