@@ -7,12 +7,9 @@
         900: { slidesPerView: 3 },
         1200: { slidesPerView: 4 },
       }"
-      :controller="inverse"
       :initial-slide="3"
       :space-between="12"
       :centeredSlides="true"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
     >
       <swiper-slide>
         <div class="px-4 py-4 bg-white lg:lg:w-56 w-96 cursor-grab">
@@ -774,26 +771,22 @@
             <span class="text-xs font-semibold text-gray-600">customer,</span>
             <span class="text-xs text-gray-500">2 day ago</span>
           </div>
-        </div></swiper-slide
-      >
+        </div>
+      </swiper-slide>
     </swiper>
   </div>
 </template>
 
 <style></style>
 <script>
-import { Swiper, SwiperSlide } from "swiper/vue"; // Import Swiper styles
+import { Swiper, SwiperSlide, useSwiper } from "swiper/vue"; // Import Swiper styles
 import "swiper/css";
 export default {
   components: { Swiper, SwiperSlide },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
-    return { onSwiper, onSlideChange };
+    const swiper = useSwiper();
+    console.log(swiper);
+    return { swiper };
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <footer class="relative mt-12 text-white bg-gray-900">
+  <footer class="relative text-white bg-gray-900">
     <div class="px-4 py-10 md:px-10">
       <div class="grid grid-cols-1 gap-4 md:grid-cols-6">
         <div class="md:col-span-1">

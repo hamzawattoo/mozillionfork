@@ -1,4 +1,33 @@
-<script setup></script>
+<script setup>
+const brands = [
+  "Apple",
+  "Samsung",
+  "Huawei",
+  "Google",
+  "OnePlus",
+  "Sony",
+  "Xiaomi",
+  "Oppo",
+  "Nokia",
+  "Motorola",
+  "LG",
+  "HTC",
+  "BlackBerry",
+  "Lenovo",
+  "Asus",
+  "Microsoft",
+  "ZTE",
+  "Alcatel",
+  "Vodafone",
+  "Fairphone",
+  "CAT",
+  "Honor",
+  "Razer",
+  "Realme",
+  "Tecno",
+  "Meizu",
+];
+</script>
 
 <template>
   <div
@@ -11,9 +40,31 @@
         Phone
       </button>
       <div
-        class="absolute hidden group-hover:block z-10 w-[900px] -left-20 bg-blue-500 h-[400px] top-[69px]"
+        class="absolute hidden group-hover:block z-10 w-[900px] -left-20 bg-blue-500 h-[700px] top-[69px]"
       >
-        Links will come here
+        <div class="flex gap-4 p-4">
+          <div>
+            <h2 class="font-semibold text-white">Sell Phones</h2>
+
+            <div class="flex flex-col">
+              <div
+                class="space-y-2"
+                v-for="(brand, index) in brands"
+                :key="index"
+              >
+                <a href="#" class="font-light border-b border-white">
+                  {{ brand }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="font-semibold text-white">Sell Tablets</h2>
+            <div>
+              <a href="#" class="font-light border-b border-white"> Apple </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="relative h-full group">
@@ -23,9 +74,31 @@
         Tablets
       </button>
       <div
-        class="absolute hidden group-hover:block z-10 w-[900px] -right-[500px] bg-blue-500 h-[400px] top-[69px]"
+        class="absolute hidden group-hover:block z-10 w-[900px] -right-[500px] bg-blue-500 h-[700px] top-[69px]"
       >
-        Links will come here
+        <div class="flex gap-4 p-4">
+          <div>
+            <h2 class="font-semibold text-white">Sell Phones</h2>
+
+            <div class="flex flex-col">
+              <div
+                class="space-y-2"
+                v-for="(brand, index) in brands"
+                :key="index"
+              >
+                <a href="#" class="font-light border-b border-white">
+                  {{ brand }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="font-semibold text-white">Sell Tablets</h2>
+            <div>
+              <a href="#" class="font-light border-b border-white"> Apple </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="relative h-full group">
@@ -35,9 +108,31 @@
         Sell
       </button>
       <div
-        class="absolute hidden lg:hidden group-hover:block z-10 w-[900px] -left-[600px] bg-blue-500 h-[400px] top-[69px]"
+        class="absolute hidden lg:hidden group-hover:block z-10 w-[900px] -left-[600px] bg-blue-500 h-[700px] top-[69px]"
       >
-        Links will come here
+        <div class="flex gap-4 p-4">
+          <div>
+            <h2 class="font-semibold text-white">Sell Phones</h2>
+
+            <div class="flex flex-col">
+              <div
+                class="space-y-2"
+                v-for="(brand, index) in brands"
+                :key="index"
+              >
+                <a href="#" class="font-light border-b border-white">
+                  {{ brand }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="font-semibold text-white">Sell Tablets</h2>
+            <div>
+              <a href="#" class="font-light border-b border-white"> Apple </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="text-sm font-light">
