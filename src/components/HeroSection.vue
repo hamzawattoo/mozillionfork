@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import removebg from "../images/download-removebg-preview.png";
+</script>
 
 <template>
   <section>
@@ -43,11 +45,7 @@
           </div>
         </div>
         <div class="absolute bottom-0 right-10">
-          <img
-            class="h-72 md:h-auto"
-            src="./images/download-removebg-preview.png"
-            alt=""
-          />
+          <img class="h-72 md:h-auto" :src="removebg" alt="" />
         </div>
       </div>
     </div>
