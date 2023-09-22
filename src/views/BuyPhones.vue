@@ -1,18 +1,22 @@
 <template>
-  <div>
+  <div >
     <Header />
     <Tabs />
-    <div class="px-6 py-8 bg-[#1f9fff] flex items-center gap-12 text-white">
-      <h2 class="text-2xl font-light">
+    <div class="  bg-[#1f9fff]   ">
+      <div class="container flex items-center justify-between gap-12 !py-8 text-white">
+              <h2 class="text-xl md:text-2xl font-light">
         New and refurbished. Tested and guaranteed.
       </h2>
-      <button class="hover:text-black">Clear all</button>
+      <button class="hover:text-black text-white">Clear all</button>
+      </div>
+
     </div>
-    <div class="flex">
+
+    <div class="flex container">
       <Filters />
       <div class="flex-1">
         <div class="flex flex-col items-center justify-center py-8 space-y-5">
-          <h2 class="text-4xl font-light">Refurbished iPhones for sale</h2>
+          <h2 class="text-4xl font-medium">Refurbished iPhones for sale</h2>
           <div v-if="open" class="p-4 space-y-5">
             <p>
               Looking for a high-quality iPhone at a fraction of the cost of a
@@ -49,12 +53,12 @@
             {{ open ? "Read less" : "Read more" }}
           </button>
           <hr class="my-4 border-t border-gray-300" />
-          <div class="w-full py-2 border-t">
+          <div class="w-full py-2 border-t border-gray-300">
             <span class="px-5 text-sm text-gray-600">24 results</span>
           </div>
-          <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-4 md:px-4">
+          <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-4 md:px-4 min-w-full">
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -74,7 +78,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -94,7 +98,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -114,7 +118,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -134,7 +138,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -154,7 +158,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -174,7 +178,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -194,7 +198,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -214,7 +218,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -234,7 +238,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -254,7 +258,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>
@@ -274,7 +278,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col px-4 py-4 text-center bg-white rounded-xl"
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
             >
               <div class="block pb-5 text-2xl font-thin text-gray-800">
                 <a href="#">Apple iPhone 13 Pro</a>

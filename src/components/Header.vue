@@ -146,7 +146,7 @@
         <div class="relative flex items-center hidden gap-3 lg:flex">
           <div class="group">
             <a
-              class="relative flex items-center h-full py-6 text-white lg:text-sm font-extralight"
+              class="relative flex items-center h-full py-6 text-white lg:text-xl font-extralight"
               href=""
             >
               How its works
@@ -178,7 +178,7 @@
           </div>
           <div class="group">
             <a
-              class="relative flex items-center py-6 text-lg text-white lg:text-sm font-extralight"
+              class="relative flex items-center py-6 text-lg text-white lg:text-xl font-extralight"
               href=""
             >
               Help & Resources
@@ -209,7 +209,7 @@
             </div>
           </div>
           <a
-            class="relative flex items-center text-lg text-white lg:text-sm font-extralight"
+            class="relative flex items-center text-lg text-white lg:text-xl font-extralight"
             href=""
           >
             Sign Up

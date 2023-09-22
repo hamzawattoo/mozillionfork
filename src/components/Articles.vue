@@ -5,12 +5,12 @@
     <div class="my-12 text-center">
       <h1 class="text-3xl font-medium text-gray-800">As seen in...</h1>
     </div>
-    <div class="grid grid-cols-1 gap-6 px-5 md:px-24 md:grid-cols-5">
-      <div class="flex flex-col items-center gap-6 p-4 bg-white rounded-xl">
+    <div class="grid grid-cols-1 gap-10 px-5 md:px-24 md:grid-cols-5">
+      <div class="flex flex-col items-center gap-10 p-4 bg-white rounded-xl">
         <div class="">
           <a href="">
             <img
-              class="h-20"
+              class="h-40"
               src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/iphone-15-vs-14-1.jpg"
               alt="iPhone 15 vs iPhone 14: How do they compare?"
             />
@@ -29,12 +29,12 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center gap-6 px-4 py-4 bg-white rounded-xl"
+        class="flex flex-col items-center gap-10 px-4 py-4 bg-white rounded-xl"
       >
         <div class="">
           <a href="">
             <img
-              class="h-20"
+              class="h-40 w-full object-cover h-40 w-full object-cover"
               src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/iPhone-15-series-featured-image.jpg"
               alt="iPhone 15 vs iPhone 14: How do they compare?"
             />
@@ -53,11 +53,11 @@
           <a href="" class="btn-custom">Read More</a>
         </div>
       </div>
-      <div class="flex flex-col items-center gap-6 p-4 bg-white rounded-xl">
+      <div class="flex flex-col items-center gap-10 p-4 bg-white rounded-xl">
         <div class="">
           <a href="">
             <img
-              class="h-20"
+              class="h-40 w-full object-cover"
               src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/iphone-15-vs-14-1.jpg"
               alt="iPhone 15 vs iPhone 14: How do they compare?"
             />
@@ -76,11 +76,11 @@
           <a href="" class="btn-custom">Read More</a>
         </div>
       </div>
-      <div class="flex flex-col items-center gap-6 p-4 bg-white rounded-xl">
+      <div class="flex flex-col items-center gap-10 p-4 bg-white rounded-xl">
         <div class="">
           <a href="">
             <img
-              class="h-20"
+              class="h-40 w-full object-cover"
               src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/iphone-15-vs-14-1.jpg"
               alt="iPhone 15 vs iPhone 14: How do they compare?"
             />
@@ -99,11 +99,11 @@
           <a href="" class="btn-custom">Read More</a>
         </div>
       </div>
-      <div class="flex flex-col items-center gap-6 p-4 bg-white rounded-xl">
+      <div class="flex flex-col items-center gap-10 p-4 bg-white rounded-xl">
         <div class="">
           <a href="">
             <img
-              class="h-20"
+              class="h-40 w-full object-cover"
               src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/iphone-15-vs-14-1.jpg"
               alt="iPhone 15 vs iPhone 14: How do they compare?"
             />

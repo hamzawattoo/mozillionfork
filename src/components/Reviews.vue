@@ -159,6 +159,7 @@ import ReviewCards from "./ReviewCards.vue";
       </div>
     </div>
   </section>
+  
 </template>
 
 <style scoped></style>

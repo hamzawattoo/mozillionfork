@@ -16,3 +16,10 @@ body {
 .bg-sky {
   background-color: #3e87ed;
 }
+.container{
+  width: 100%;
+  max-width: 1700px;
+  position: relative;
+  padding:0px 15px;
+  margin: auto;
+}
