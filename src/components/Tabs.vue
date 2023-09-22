@@ -48,7 +48,7 @@ const brandv = [
       >
         <div class="grid grid-cols-5  gap-6 p-4">
           <div>
-            <h2 class="font-semibold text-white">Sevll Phones</h2>
+            
 
             <div class="flex flex-col ">
               <div
@@ -107,7 +107,7 @@ const brandv = [
               </div>
               <div class="flex items-center justify-center my-12">
                 <a href="#">
-                  <img class="h-36" :src="phone" alt="img" />
+                  <img class="h-56" :src="phone" alt="img" />
                 </a>
               </div>
               <div class="apple-tx-buy">
@@ -130,9 +130,9 @@ const brandv = [
         Tablets
       </button>
       <div
-        class="absolute hidden group-hover:block z-10 w-[900px] -right-[500px] bg-blue-500 h-[700px] top-[69px]"
+        class="absolute hidden group-hover:block z-50 min-w-[60vw] -right-[500px] bg-blue-500 h-[700px] top-[69px]"
       >
-      <div class="grid grid-cols-5  gap-6 p-4">
+      <div class="grid grid-cols-4  gap-6 p-4">
           
           <div>
             <h2 class="font-semibold text-white text-xl">Samsung Phones</h2>
@@ -179,7 +179,7 @@ const brandv = [
               </div>
               <div class="flex items-center justify-center my-12">
                 <a href="#">
-                  <img class="h-36" :src="phone" alt="img" />
+                  <img class="h-56" :src="phone" alt="img" />
                 </a>
               </div>
               <div class="apple-tx-buy">
@@ -202,28 +202,55 @@ const brandv = [
         Sell
       </button>
       <div
-        class="absolute hidden lg:hidden group-hover:block z-10 w-[900px] -left-[600px] bg-blue-500 h-[700px] top-[69px]"
+        class="absolute hidden lg:hidden group-hover:block z-50 w-[70vw] -left-[600px] bg-blue-500 h-[700px] top-[69px]"
       >
-        <div class="flex gap-4 p-4">Sell Tablet
+      <div class="grid grid-cols-3  gap-6 p-4">
+          
           <div>
-            <h2 class="font-semibold text-white">Sell Phones</h2>
-
-            <div class="flex flex-col">
-              <div
-                class="space-y-2"
-                v-for="(brand, index) in brands"
+            <h2 class="font-semibold text-white text-xl">Samsung Phones</h2>
+            <div
+                class="space-y-2 border-b py-1.5"
+                v-for="(brand, index) in brandv"
                 :key="index"
               >
-                <a href="#" class="font-extralight border-b border-white">
+                <a href="#" class="font-extralight border-white text-xl"  :class="{ 'apple-brand': brand === 'Models:' }">
                   {{ brand }}
                 </a>
               </div>
-            </div>
           </div>
           <div>
-            <h2 class="font-semibold text-white">Sell Tablets</h2>
-            <div>
-              <a href="#" class="font-extralight border-b border-white"> Apple </a>
+            <h2 class="font-semibold text-white text-xl">Apple phones</h2>
+            <div
+                class="space-y-2 border-b py-1.5"
+                v-for="(brand, index) in brandv"
+                :key="index"
+              >
+                <a href="#" class="font-extralight  border-white text-xl" :class="{ 'apple-brand': brand === 'Models:' }">
+                  {{ brand }}
+                </a>
+              </div>
+          </div>
+         
+          <div>
+            <div
+              class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            >
+              <div class="block pb-5 text-2xl font-thin text-gray-800">
+                <a href="#">Apple iPhone 13 Pro</a>
+              </div>
+              <div class="flex items-center justify-center my-12">
+                <a href="#">
+                  <img class="h-64" :src="phone" alt="img" />
+                </a>
+              </div>
+              <div class="apple-tx-buy">
+                <p>Buy from</p>
+                <a
+                  class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
+                  href="#"
+                  >£639</a
+                >
+              </div>
             </div>
           </div>
         </div>
