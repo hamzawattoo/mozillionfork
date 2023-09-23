@@ -232,8 +232,8 @@ import klarna from "../../images/klarna.svg";
             </p>
           </div>
         </div>
-        <div class="w-[50%] md:w-80 md:flex items-center">
-          <div class="w-16">
+        <div class="w-[50%] md:w-80 md:flex items-center gap-3">
+          <div class="w-32">
             <img class="object-cover w-full h-auto" :src="klarna" alt="img" />
           </div>
           <div class="md:w-50 md:pl-5 hm-text">
