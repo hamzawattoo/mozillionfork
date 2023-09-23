@@ -1,7 +1,7 @@
 <script setup></script>
 
-<template>
-  <nav class="border-b bg-blue">
+<template> 
+  <nav class="border-b bg-blue sticky top-0 z-50">
     <div class="flex items-baseline justify-between px-6 py-4">
       <div
         class="flex flex-col items-baseline justify-between xl:flex-row xl:gap-12"
