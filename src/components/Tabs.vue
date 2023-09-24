@@ -35,9 +35,11 @@ const brandv = [
 
 <template>
   <div
-    class="lg:flex hidden text-white items-center justify-around bg-[#102133] w-full"
+    class=" bg-[#102133] w-full py-3  !px-4 "
+    
   >
-    <div class="relative h-full group">
+  <div class="container lg:flex hidden text-white items-center justify-around">
+    <div class="relative h-full group ">
       <button
         class="px-6 py-6 text-xl font-extralight border-b-2 border-transparent hover:border-white"
       >
@@ -256,11 +258,13 @@ const brandv = [
         </div>
       </div>
     </div>
-    <div class="text-sm font-extralight">
+    <div class="text-lg font-extralight">
       <h2 class="font-bold">Sales Line:</h2>
       <p>Mon-Fri 9am-6pm</p>
       <p>020 4516 3885</p>
     </div>
+  </div>
+   
   </div>
 </template>
 <script>

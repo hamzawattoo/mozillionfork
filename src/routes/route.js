@@ -5,6 +5,8 @@ import Home from "../views/Home.vue";
 import MakeOffer from "../views/MakeOffer.vue";
 import BuyPhones from "../views/BuyPhones.vue";
 import insuranceCheckout from "../views/insuranceCheckout.vue";
+import confirmCheckout from "../views/confirmCheckout.vue";
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -28,6 +30,11 @@ const router = createRouter({
       path: "/insurance-Checkout",
       name: "insuranceCheckout",
       component:insuranceCheckout ,
+    },
+    {
+      path: "/confirm-Checkout",
+      name: "confirmCheckout",
+      component:confirmCheckout ,
     },
   ],
 });

@@ -12,10 +12,10 @@ import klarna from "../../images/klarna.svg";
 <template>
   <section>
     <div class="bg-white">
-      <div class="flex px-5 py-4 mx-auto space-x-5 bg-white md:max-w-7xl">
+      <div class="flex px-5 py-4 mx-auto space-x-5 bg-white md:max-w-[1400px]">
         <div class="items-center hidden md:w-80 lg:flex">
-          <div class="md:w-50 hm-fist-logo">
-            <img class="w-16" :src="covered" alt="img" />
+          <div class="max-w-[60px] max-h-[80px] w-full  ">
+            <img class="w-full h-auto object-cover" :src="covered" alt="img" />
           </div>
           <div class="md:w-50 md:pl-5 hm-text">
             <h2 class="font-semibold text-gray-800">Covered</h2>
@@ -23,8 +23,8 @@ import klarna from "../../images/klarna.svg";
           </div>
         </div>
         <div class="items-center hidden md:w-80 lg:flex">
-          <div class="md:w-50 hm-fist-logo-2">
-            <img class="w-24" :src="inspected" alt="img" />
+          <div class="max-w-[80px] max-h-[80px] w-full ">
+            <img class="w-full h-auto object-cover" :src="inspected" alt="img" />
           </div>
           <div class="md:w-50 md:pl-3 hm-text">
             <h2 class="font-semibold text-gray-800">Inspected</h2>
@@ -213,8 +213,8 @@ import klarna from "../../images/klarna.svg";
           </a>
         </div>
         <div class="items-center hidden md:w-80 lg:flex">
-          <div class="md:w-50 hm-fist-logo-4">
-            <img :src="secured" alt="img" />
+          <div class="max-w-[80px] max-h-[80px] w-full ">
+            <img class="w-full h-auto object-cover" :src="secured" alt="img" />
           </div>
           <div class="md:w-50 md:pl-5 hm-text">
             <h2 class="font-semibold text-gray-800">Returns</h2>
@@ -222,8 +222,8 @@ import klarna from "../../images/klarna.svg";
           </div>
         </div>
         <div class="items-center hidden md:w-80 lg:flex">
-          <div class="md:w-50 hm-fist-logo-5">
-            <img class="w-24" :src="globe" alt="img" />
+          <div class="max-w-[80px] max-h-[80px] w-full">
+            <img class="w-full h-auto object-cover" :src="globe" alt="img" />
           </div>
           <div class="md:w-50 md:pl-5 hm-text">
             <h2 class="text-gray-800 ffont-semibold">Protect</h2>
@@ -233,8 +233,8 @@ import klarna from "../../images/klarna.svg";
           </div>
         </div>
         <div class="w-[50%] md:w-80 md:flex items-center gap-3">
-          <div class="w-32">
-            <img class="object-cover w-full h-auto" :src="klarna" alt="img" />
+          <div class="max-w-[80px] max-h-[80px] w-full">
+            <img class="w-full h-auto object-cover" :src="klarna" alt="img" />
           </div>
           <div class="md:w-50 md:pl-5 hm-text">
             <h2 class="font-semibold text-gray-800">Flexible</h2>
