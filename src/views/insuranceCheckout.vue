@@ -4,20 +4,20 @@
         <Tabs />
         <Perks />
         <section>
-            <div  class="bg-white !grid !grid-cols-8 space-x-8 rounded-2xl !my-6 !px-8 !py-8 container ">
-                  <div class="w-full  h-auto col-span-2">
+            <div  class="bg-white !grid grid-cols-1 lg:!grid-cols-8 lg:space-x-8 rounded-2xl shadow-lg !my-6 mx-2  px-2 md:!px-8 !py-8 container ">
+                  <div class="max-w-sm mx-auto w-full  h-auto lg:col-span-2">
                         <img class="w-full h-full object-contain" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662630258/rfge2gueoivcoreiti1p.png" alt="">
                     </div>
-                <div class="col-span-6">
+                <div class=" lg:col-span-6">
                     <div class="mb-10">
-                                <h3 class="text-3xl text-gray-800">Protect your phone now and get the first <strong>2 Months' FREE</strong></h3>
+                                <h3 class="text-xl md:text-3xl text-gray-800">Protect your phone now and get the first <strong>2 Months' FREE</strong></h3>
                                 <p class="text-xl text-gray-800 my-2">Piece of mind insurance from just <strong>35p</strong> a day</p>
                                 <p class="text-base text-gray-500 ">By clicking 'Add to order' you confirm you have read the relevant Insurance Product Information Document and the policy is suitable for your needs</p>
                      </div>
-                     <div class="border-2 border-black rounded-xl grid grid-cols-5 items-center justify-between px-6 py-3">
-                                  <div class="col-span-4">
-                                      <h4 class="text-2xl text-gray-800"><strong>2 Months' FREE</strong> | Cover against Theft, Damage, &amp; Breakdown</h4>
-                                      <p class="text-lg text-gray-800 py-2.5 ">£10.99 per month thereafter, cancel at anytime</p>
+                     <div class="border-2 border-black rounded-xl grid grid-cols-1 lg:grid-cols-5 space-y-4  items-center justify-between px-6 py-3">
+                                  <div class="lg:col-span-4">
+                                      <h4 class="text-xl md:text-2xl text-gray-800"><strong>2 Months' FREE</strong> | Cover against Theft, Damage, &amp; Breakdown</h4>
+                                      <p class="text-md md:text-lg text-gray-800 py-2.5 ">£10.99 per month thereafter, cancel at anytime</p>
                                       <p class="text-base text-gray-500">Please read the <a target="_blank" href="https://www.mozillion.com/WCS_theft_AD_scheme.pdf" class="text-blue-700">insurance product information document</a></p>
                                   </div>
                                   <div class="col-span-1 text-end">
@@ -27,10 +27,10 @@
                                   </div>
                     </div>
                     <div class="why-choose-insurance">
-                        		    <h3 class="py-5 text-3xl text-gray-800">Why choose our insurance?</h3>
+                        		    <h3 class="py-5 text-xl md:text-3xl text-gray-800">Why choose our insurance?</h3>
                     </div>
                     <div class="">
-                                <div class="grid grid-cols-4">
+                                <div class="grid grid-cols-1 lg:grid-cols-4 space-y-4">
                                     <div class="flex items-center gap-2">
                                           <i class="">
                                             <img class="w-full h-full object-cover" src="https://res.cloudinary.com/mozillion/image/upload/q_100/v1669253561/piggy-bank_qlr99n.svg" alt="piggy bank icon">
