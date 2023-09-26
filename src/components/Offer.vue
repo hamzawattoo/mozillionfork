@@ -354,6 +354,8 @@
                 class="max-w-xs px-4 py-3 text-2xl text-center rounded-full outline-none bg-blue-50 placeholder-middle"
                 type="number"
                 placeholder="£"
+                v-model="price"
+                @input="setPrice($event.target.value)"
               />
             </div>
             <div>
@@ -376,6 +378,14 @@
                   </select>
                 </div>
               </div>
+              <div class="flex items-center justify-between px-3 py-2">
+                <div>
+                  <p class="text-2xl font-light">Total Price</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-light">£ {{ totalPrice }}</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="flex justify-end mt-8">
@@ -391,8 +401,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
+<script>
 import {
   TransitionRoot,
   TransitionChild,
@@ -400,10 +409,31 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/vue";
-
-const isOpen = ref(false);
-
-function setIsOpen(value) {
-  isOpen.value = value;
-}
+export default {
+  data() {
+    return {
+      isOpen: false,
+      deliveryCost: 2.99,
+      price: 0,
+      totalPrice: 0,
+    };
+  },
+  methods: {
+    setIsOpen(value) {
+      this.isOpen = value;
+    },
+    setPrice(value) {
+      this.price = value;
+      this.totalPrice = Number(this.price) + Number(this.deliveryCost);
+      this.totalPrice = this.totalPrice.toFixed(2);
+    },
+  },
+  components: {
+    TransitionRoot,
+    TransitionChild,
+    Dialog,
+    DialogPanel,
+    DialogTitle,
+  },
+};
 </script>
