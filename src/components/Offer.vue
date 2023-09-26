@@ -19,18 +19,210 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="flex gap-10">
+          <div class="flex items-center gap-4">
             <div class="flex gap-3">
-              <i
-                class="flex items-center justify-center w-5 h-5 border border-black rounded-full fa fa-plus font-extralight"
-              ></i>
-              <p class="font-light text-gray-600">View All asking Price</p>
+              <button
+                @click="setIsOpen(true)"
+                class="flex gap-2 px-2 py-1 rounded focus:ring items-cen2er"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="text-sm font-light text-left text-gray-600"
+                  >View All asking Price</span
+                >
+              </button>
             </div>
+            <TransitionRoot :show="isOpen" as="template">
+              <Dialog as="div" class="relative z-10">
+                <TransitionChild
+                  as="template"
+                  enter="duration-300 ease-out"
+                  enter-from="opacity-0"
+                  enter-to="opacity-100"
+                  leave="duration-200 ease-in"
+                  leave-from="opacity-100"
+                  leave-to="opacity-0"
+                >
+                  <div class="fixed inset-0 bg-black bg-opacity-25" />
+                </TransitionChild>
+
+                <div class="fixed inset-0 overflow-y-auto">
+                  <div
+                    class="flex items-center justify-center min-h-full p-4 text-center"
+                  >
+                    <TransitionChild
+                      as="template"
+                      enter="duration-300 ease-out"
+                      enter-from="opacity-0 scale-95"
+                      enter-to="opacity-100 scale-100"
+                      leave="duration-200 ease-in"
+                      leave-from="opacity-100 scale-100"
+                      leave-to="opacity-0 scale-95"
+                    >
+                      <DialogPanel
+                        class="z-10 w-full max-w-2xl px-6 py-5 overflow-hidden text-left align-middle transition-all transform bg-white rounded shadow-xl"
+                      >
+                        <DialogTitle
+                          as="h3"
+                          class="pb-5 text-2xl font-medium leading-6 text-gray-900"
+                        >
+                          Asking price
+                        </DialogTitle>
+                        <hr />
+                        <div class="py-2">
+                          Show
+                          <select class="border rounded" name="" id="">
+                            <option value="">10</option>
+                            <option value="">25</option>
+                            <option value="">100</option>
+                          </select>
+                          entries
+                        </div>
+                        <hr />
+
+                        <div>
+                          <div class="flex flex-col">
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                              <div
+                                class="inline-block min-w-full py-2 sm:px-6 lg:px-8"
+                              >
+                                <div class="overflow-hidden">
+                                  <table
+                                    class="min-w-full text-sm font-light text-left"
+                                  >
+                                    <thead
+                                      class="font-medium border-b dark:border-neutral-500"
+                                    >
+                                      <tr>
+                                        <th scope="col" class="px-6 py-4">#</th>
+                                        <th scope="col" class="px-6 py-4">
+                                          Device
+                                        </th>
+                                        <th scope="col" class="px-6 py-4">
+                                          Asking Price
+                                        </th>
+                                        <th scope="col" class="px-6 py-4">
+                                          Number
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr
+                                        class="border-b dark:border-neutral-500"
+                                      >
+                                        <td
+                                          class="px-6 py-4 font-medium whitespace-nowrap"
+                                        >
+                                          1
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                          IPhone 13 Pro Max
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                          £459
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                          2
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pt-2">
+                          <div class="flex items-center justify-between px-3">
+                            <div>
+                              <h2>Showing 1 to 1 of 1 entries</h2>
+                            </div>
+                            <div>
+                              <button class="p-3 rounded text-neutral-600">
+                                First
+                              </button>
+                              <button class="p-3 rounded text-neutral-600">
+                                Previous
+                              </button>
+                              <button
+                                class="px-3 py-1 rounded text-neutral-600 bg-[#f0f0f0]"
+                              >
+                                1
+                              </button>
+                              <button class="p-3 rounded text-neutral-600">
+                                Next
+                              </button>
+                              <button class="p-3 rounded text-neutral-600">
+                                Last
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <button
+                            type="button"
+                            class="absolute top-0 right-0 flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-500 focus:outline-none"
+                            @click="setIsOpen(false)"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-6 h-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </DialogPanel>
+                    </TransitionChild>
+                  </div>
+                </div>
+              </Dialog>
+            </TransitionRoot>
             <div class="flex gap-3">
-              <i
-                class="flex items-center justify-center w-5 h-5 border border-black rounded-full fa fa-plus font-extralight"
-              ></i>
-              <p class="font-light text-gray-600">View All Offers</p>
+              <button
+                @click="setIsOpen(true)"
+                class="flex items-center gap-2 px-2 py-1 rounded focus:ring"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="text-sm font-light text-left text-gray-600"
+                  >View All offers</span
+                >
+              </button>
             </div>
           </div>
           <div
@@ -198,3 +390,20 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+import {
+  TransitionRoot,
+  TransitionChild,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/vue";
+
+const isOpen = ref(false);
+
+function setIsOpen(value) {
+  isOpen.value = value;
+}
+</script>
