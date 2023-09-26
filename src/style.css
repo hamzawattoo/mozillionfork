@@ -7,6 +7,9 @@
 * {
   font-family: "Mulish", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #e9eff4;
 }
@@ -16,9 +19,17 @@ body {
 .bg-sky {
   background-color: #3e87ed;
 }
-.container{
+.container {
   width: 100%;
   max-width: 1700px;
-  padding:0px 15px;
+  padding: 0px 15px;
   margin: auto;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
