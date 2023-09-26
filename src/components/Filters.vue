@@ -55,13 +55,13 @@ const brands = [
       <a href="/buy/apple" class="text-black">Apple</a>
     </div>
 
-    <div class="flex flex-col mt-3 w-full">
+    <div class="flex flex-col w-full mt-3">
       <Disclosure>
         <DisclosureButton class="py-2">
           <div
-            class="flex items-center justify-between w-full  pb-1 border-b border-gray-300"
+            class="flex items-center justify-between w-full pb-1 border-b border-gray-300"
           >
-            <span class="text-gray-800 font-medium"> Features </span>
+            <span class="font-medium text-gray-800"> Features </span>
             <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,9 +90,9 @@ const brands = [
       <Disclosure>
         <DisclosureButton class="py-2">
           <div
-            class="flex items-center justify-between w-full  pb-1 border-b border-gray-300"
+            class="flex items-center justify-between w-full pb-1 border-b border-gray-300"
           >
-            <span class="text-gray-800 font-medium"> Brands </span>
+            <span class="font-medium text-gray-800"> Brands </span>
             <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +124,9 @@ const brands = [
       <Disclosure>
         <DisclosureButton class="py-2">
           <div
-            class="flex items-center justify-between w-full  pb-1 border-b border-gray-300"
+            class="flex items-center justify-between w-full pb-1 border-b border-gray-300"
           >
-            <span class="text-gray-800 font-medium"> Models </span>
+            <span class="font-medium text-gray-800"> Models </span>
             <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -158,9 +158,9 @@ const brands = [
       <Disclosure>
         <DisclosureButton class="py-2">
           <div
-            class="flex items-center justify-between w-full  pb-1 border-b border-gray-300"
+            class="flex items-center justify-between w-full pb-1 border-b border-gray-300"
           >
-            <span class="text-gray-800 font-medium"> Capacity </span>
+            <span class="font-medium text-gray-800"> Capacity </span>
             <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -192,9 +192,9 @@ const brands = [
       <Disclosure>
         <DisclosureButton class="py-2">
           <div
-            class="flex items-center justify-between w-full  pb-1 border-b border-gray-300"
+            class="flex items-center justify-between w-full pb-1 border-b border-gray-300"
           >
-            <span class="text-gray-800 font-medium"> Colour </span>
+            <span class="font-medium text-gray-800"> Colour </span>
             <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -226,9 +226,9 @@ const brands = [
       <Disclosure>
         <DisclosureButton class="py-2">
           <div
-            class="flex items-center justify-between w-full  pb-1 border-b border-gray-300"
+            class="flex items-center justify-between w-full pb-1 border-b border-gray-300"
           >
-            <span class="text-gray-800 font-medium"> Price </span>
+            <span class="font-medium text-gray-800"> Price </span>
             <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -253,20 +253,16 @@ const brands = [
             v-for="brand in brands"
           >
             <Switch />
-            <span  href="#">{{ brand }}</span>
+            <span href="#">{{ brand }}</span>
           </div>
         </DisclosurePanel>
       </Disclosure>
       <div class="flex items-center gap-2 py-4 text-sm font-light">
         <Switch />
-        <span class="text-gray-800 font-medium text-base" href="#">Show only 'Buy it now' prices</span>
+        <span class="text-base font-medium text-gray-800" href="#"
+          >Show only 'Buy it now' prices</span
+        >
       </div>
-      <div class="">
-         <button class="px-8 py-2 text-xl font-extralight text-white bg-blue-700 rounded-full">
-        FILTER
-      </button>
-      </div>
-     
     </div>
   </div>
 </template>
