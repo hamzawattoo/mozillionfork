@@ -2,7 +2,7 @@
   <span id="top"></span>
   <router-view></router-view>
   <a
-    class="fixed top-[85%] right-4 text-white p-2 bg-gray-500 rounded-full"
+    class="z-10 fixed top-[85%] right-4 text-white p-2 bg-gray-500 rounded-full"
     href="#top"
   >
     <svg
