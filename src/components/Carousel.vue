@@ -8,9 +8,9 @@
       <div class="flex gap-2 carousel__item">
         <div class="">
           <div class="px-8 py-2 w-80">
-            <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
+            <h2 class="text-xl font-semibold text-white">Samsddfung Phones</h2>
             <div
-              class="space-y-2 border-b py-1.5"
+              class="space-y-2 border-b py-3"
               v-for="(brand, index) in brandv"
               :key="index"
             >
@@ -28,7 +28,7 @@
           <div class="px-8 py-2 w-80">
             <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
             <div
-              class="space-y-2 border-b py-1.5"
+              class="space-y-2 border-b py-3"
               v-for="(brand, index) in brandv"
               :key="index"
             >
@@ -48,7 +48,7 @@
           <div class="px-8 py-2 w-80">
             <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
             <div
-              class="space-y-2 border-b py-1.5"
+              class="space-y-2 border-b py-3"
               v-for="(brand, index) in brandv"
               :key="index"
             >
@@ -85,7 +85,7 @@
         class="flex items-center gap-2 px-4 py-3 text-black bg-white rounded"
         @click="next"
       >
-        <span>More Brands</span>
+        <span class="font-medium">More Brands</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -122,8 +122,6 @@ export default {
       "Brand New Iphone",
       "Brand New Iphone",
       "Models:",
-      "Brand New Iphone",
-      "Brand New Iphone",
       "Brand New Iphone",
       "Brand New Iphone",
       "Brand New Iphone",

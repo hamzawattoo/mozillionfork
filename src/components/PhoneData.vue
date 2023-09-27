@@ -297,7 +297,7 @@
             </div>
           </div>
         </div>
-        <div class="flex gap-4 px-4 py-4 item-center">
+        <div class="flex gap-4 px-4 py-4 item-center hidden">
           <button class="">
             <svg
               xmlns="http://www.w3.org/2000/svg"

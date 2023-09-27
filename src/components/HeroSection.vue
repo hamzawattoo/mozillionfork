@@ -30,14 +30,14 @@ import removebg from "../../images/download-removebg-preview.png";
           class="absolute left-0 right-0 z-10 flex items-center justify-center gap-4 bottom-5 md:bottom-20"
         >
           <div
-            class="px-3 py-1 font-thin text-white bg-blue-500 border-2 border-blue-500 border-solid rounded-full text-uppercase md:mr-10 md:px-6 md:py-3 md:text-2xl"
+            class="px-3 py-1 font-thin text-white bg-blue-500 hover:bg-blue-900 border-2 border-blue-500 border-solid rounded-full text-uppercase md:mr-10 md:px-6 md:py-3 md:text-2xl"
           >
-            <a class="" href="https://www.mozillion.com/search-phone"
+            <a class="" href=""
               >Buy a Phone</a
             >
           </div>
           <div
-            class="px-3 py-1 font-thin text-white uppercase bg-green-600 border-2 border-white border-solid rounded-full md:border-3 md:px-6 md:py-3 md:text-2xl"
+            class="px-3 py-1 font-thin text-white uppercase bg-green-600 hover:bg-green-800 border-2 border-white border-solid rounded-full md:border-3 md:px-6 md:py-3 md:text-2xl"
           >
             <a class="" href="https://www.mozillion.com/search-brand-sale/apple"
               >Sell a Phone</a

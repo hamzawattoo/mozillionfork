@@ -2,15 +2,15 @@
 
 <template>
   <nav class="sticky top-0 z-50 border-b bg-blue">
-    <div class="flex items-center justify-between px-6 py-2 lg:items-baseline">
+    <div class="flex items-center justify-between px-8  lg:items-baseline">
       <div
-        class="flex flex-col items-baseline justify-between lg:flex-row xl:gap-12"
+        class="flex flex-col items-baseline justify-between lg:flex-row xl:gap-16 pt-6 pb-6"
       >
-        <div class="flex flex-col items-baseline xl:flex-row xl:gap-6">
+        <div class="flex flex-col items-baseline xl:flex-row xl:gap-8">
           <div class="">
-            <a class="new-logo" href="https://www.mozillion.com/">
+            <a class="new-logo w-[160px]" href="https://www.mozillion.com/">
               <img
-                class="h-6"
+                class="w-full  "
                 src="https://res.cloudinary.com/mozillion/image/upload/v1623322043/logo_rvaicy.svg"
                 alt="Mozillion Logo"
               />
@@ -153,10 +153,10 @@
         class="flex items-end gap-3 lg:items-baseline justify-end lg:justify-between md:min-w-[50%]"
       >
         <div
-          class="flex items-center justify-between hidden px-3 py-2 bg-white border lg:flex rounded-3xl"
+          class="flex items-center justify-between hidden px-3 py-2 bg-white border lg:flex rounded-full"
         >
           <input
-            class="px-2 bg-transparent focus:outline-none"
+            class="pl-2 pr-12 py-1 bg-transparent focus:outline-none"
             type="search"
             placeholder="Search"
           />
@@ -177,13 +177,13 @@
             </svg>
           </span>
         </div>
-        <div class="relative flex items-center hidden gap-3 lg:flex">
+        <div class="relative flex items-center justify-between hidden gap-12 lg:flex">
           <div class="group">
             <a
-              class="relative flex items-center h-full py-6 text-white lg:text-xl font-extralight"
+              class="relative flex items-center h-full  text-white lg:text-[1vw] font-extralight"
               href=""
             >
-              How its works
+              How  its works
             </a>
             <div
               class="absolute z-10 flex flex-col w-56 px-4 py-2 transition ease-out scale-0 bg-blue-500 group-hover:scale-100 top-14"
@@ -212,7 +212,7 @@
           </div>
           <div class="group">
             <a
-              class="relative flex items-center py-6 text-lg text-white lg:text-xl font-extralight"
+              class="relative flex items-center  text-lg text-white lg:text-[1vw] font-extralight"
               href=""
             >
               Help & Resources
@@ -243,7 +243,7 @@
             </div>
           </div>
           <a
-            class="relative flex items-center text-lg text-white lg:text-xl font-extralight"
+            class="relative flex items-center text-lg text-white lg:text-[1vw] font-extralight"
             href=""
           >
             Sign Up
