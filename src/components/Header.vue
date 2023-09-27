@@ -2,7 +2,7 @@
 
 <template>
   <nav class="sticky top-0 z-50 border-b bg-blue">
-    <div class="flex items-center justify-between px-8  lg:items-baseline">
+    <div class="flex items-center justify-between gap-3 px-8  lg:items-baseline">
       <div
         class="flex flex-col items-baseline justify-between lg:flex-row xl:gap-16 pt-6 pb-6"
       >
@@ -150,7 +150,7 @@
         </div>
       </div>
       <div
-        class="flex items-end gap-3 lg:items-baseline justify-end lg:justify-between md:min-w-[50%]"
+        class="flex items-end gap-6 lg:items-baseline justify-end lg:justify-center md:min-w-[50%]"
       >
         <div
           class="flex items-center justify-between hidden px-3 py-2 bg-white border lg:flex rounded-full"
@@ -269,7 +269,7 @@
           </button>
         </div>
         <div class="flex items-center gap-2 lg:hidden">
-          <button @click="toggleMobileNav" class="block md:hidden">
+          <button @click="toggleMobileNav" class="block lg:hidden">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
