@@ -47,11 +47,33 @@
             </p>
           </div>
           <div class="col-span-1 text-end">
-            <button
-              class="px-6 py-2 text-xl text-white bg-blue-600 rounded-full font-extralight"
-            >
-              Add to order
-            </button>
+            <div>
+    <span>
+      <!-- Loading GIF -->
+      <img
+        v-if="loading"
+        src="https://www.mozillion.com/img/ajax-loader.gif"
+        alt=""
+        class=""
+      />
+    </span>
+    <button
+      v-if="!addedToBasket && !loading"
+      type="button"
+      @click="addToBasket"
+      class="px-4 py-1 mt-6 mb-4 text-black   font-extralight rounded-3xl bg-blue-600 hover:bg-black text-white"
+    >
+      Add to Basket
+    </button>
+    <button
+      v-if="addedToBasket && !loading"
+      type="button"
+      @click="removeFromBasket"
+      class="px-4 py-1 mt-6 mb-4 text-white bg-blue-600 border-2 border-blue-600 hover:text-black hover:bg-white font-extralight rounded-3xl"
+    >
+      Remove from Basket
+    </button>
+  </div>
           </div>
         </div>
         <div class="why-choose-insurance">
@@ -115,7 +137,7 @@
     </div>
     <div class="col-span-1 text-end container !px-0">
       <button
-        class="px-6 py-2 text-xl text-white bg-blue-600 rounded-full font-extralight"
+        class="px-6 py-2 text-xl text-white bg-blue-600 hover:bg-black rounded-full font-extralight"
       >
         Continue without adding cover
       </button>
@@ -135,13 +157,29 @@ export default {
     return {
       open: false,
       phone: "", // Initialize phone with an appropriate value
+      addedToBasket: false,
+      loading: false,
     };
+
   },
   methods: {
-    toggle() {
-      this.open = !this.open;
+    addToBasket() {
+      // Simulate an API call or any asynchronous action
+      this.loading = true;
+      setTimeout(() => {
+        this.addedToBasket = true;
+        this.loading = false;
+      }, 2000); // Simulate loading for 2 seconds
+    },
+    removeFromBasket() {
+      this.loading = true;
+      setTimeout(() => {
+        this.addedToBasket = false;
+        this.loading = false;
+      }, 2000); // Simulate loading for 2 seconds
     },
   },
+
   components: {
     Header,
     Tabs,

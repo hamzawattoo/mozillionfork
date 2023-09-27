@@ -13,7 +13,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
         </div>
         <div class="flex items-center justify-center my-12">
           <a href="#">
-            <img class="w-64" :src="phone" alt="img" />
+            <img class="w-28 md:w-64" :src="phone" alt="img" />
           </a>
         </div>
         <div class="apple-tx-buy">
@@ -31,7 +31,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
         </div>
         <div class="flex items-center justify-center my-12">
           <a href="#">
-            <img class="w-64" :src="phone" alt="img" />
+            <img class=" w-28 md:w-56" :src="phone" alt="img" />
           </a>
         </div>
         <div class="apple-tx-buy">
@@ -49,7 +49,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
         </div>
         <div class="flex items-center justify-center my-12">
           <a href="#">
-            <img class="w-64" :src="phone" alt="img" />
+            <img class=" w-28 md:w-56" :src="phone" alt="img" />
           </a>
         </div>
         <div class="apple-tx-buy">
@@ -67,7 +67,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
         </div>
         <div class="flex items-center justify-center my-12">
           <a href="#">
-            <img class="w-64" :src="phone" alt="img" />
+            <img class=" w-28 md:w-56" :src="phone" alt="img" />
           </a>
         </div>
         <div class="apple-tx-buy">

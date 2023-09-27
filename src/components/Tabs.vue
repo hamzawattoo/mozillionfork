@@ -15,9 +15,6 @@ const brands = [
   "Sell Your Phones",
   "Sell Your Phones",
   "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
 ];
 const brandv = [
   "Apples Phones",
@@ -37,24 +34,24 @@ const brandv = [
 </script>
 
 <template>
-  <div class="bg-[#102133] w-full py-3 !px-4">
+  <div class="bg-[#102133] w-full !px-4">
     <div
-      class="container items-center justify-around hidden text-white lg:flex"
+      class="max-w-[1920px] mx-auto items-center justify-around px-[50px] hidden text-white lg:flex"
     >
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 text-xl border-b-2 border-transparent hover:bg-white hover:bg-opacity-10 font-extralight hover:border-white"
         >
           Phone
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[100vw] xl:min-w-[80vw] w-full -left-20 bg-blue-500 top-[69px]"
+          class="absolute hidden group-hover:block z-50 min-w-[100vw] xl:min-w-[80vw] h-[80vh] w-full -left-20 bg-blue-500 top-[69px]"
         >
           <div class="flex justify-between">
             <div class="px-8 py-2 min-w-fit">
               <div class="flex flex-col">
                 <div
-                  class="space-y-4 border-b py-1.5"
+                  class="space-y-6 border-b py-3"
                   v-for="(brand, index) in brands"
                   :key="index"
                 >
@@ -67,14 +64,14 @@ const brandv = [
             <carousel />
             <div class="px-5 py-4 w-96">
               <div
-                class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+                class="flex flex-col justify-between px-4 py-4 text-center w-full max-w-xl bg-white rounded-xl  min-h-[50vh]"
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
                 </div>
                 <div class="flex items-center justify-center my-12">
                   <a href="#">
-                    <img class="h-56" :src="phone" alt="img" />
+                    <img class="w-56" :src="phone" alt="img" />
                   </a>
                 </div>
                 <div class="apple-tx-buy">
@@ -92,14 +89,14 @@ const brandv = [
       </div>
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 text-xl border-b-2 hover:bg-white hover:bg-opacity-10 border-transparent font-extralight hover:border-white"
         >
           Tablets
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[60vw] -right-[500px] bg-blue-500 h-[700px] top-[69px]"
+          class="absolute hidden group-hover:block z-50 min-w-[70vw] min-h-[80vh] -left-[300px] bg-blue-500 h-[700px] top-[69px]"
         >
-          <div class="grid grid-cols-4 gap-6 p-4">
+          <div class="grid grid-cols-4 gap-6 px-8 py-6">
             <div>
               <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
               <div
@@ -119,7 +116,7 @@ const brandv = [
             <div>
               <h2 class="text-xl font-semibold text-white">Apple phones</h2>
               <div
-                class="space-y-2 border-b py-1.5"
+                class="space-y-4 border-b py-3"
                 v-for="(brand, index) in brandv"
                 :key="index"
               >
@@ -135,7 +132,7 @@ const brandv = [
             <div>
               <h2 class="font-semibold text-white">Google Phones</h2>
               <div
-                class="space-y-2 border-b py-1.5"
+                class="space-y-2 border-b py-3"
                 v-for="(brand, index) in brands"
                 :key="index"
               >
@@ -150,14 +147,14 @@ const brandv = [
             </div>
             <div>
               <div
-                class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+                class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl max-w-xl w-full min-h-[50vh]"
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
                 </div>
                 <div class="flex items-center justify-center my-12">
                   <a href="#">
-                    <img class="h-56" :src="phone" alt="img" />
+                    <img class=" w-56" :src="phone" alt="img" />
                   </a>
                 </div>
                 <div class="apple-tx-buy">
@@ -175,18 +172,18 @@ const brandv = [
       </div>
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 text-xl border-b-2 hover:bg-white hover:bg-opacity-10 border-transparent font-extralight hover:border-white"
         >
           Sell
         </button>
         <div
-          class="absolute hidden lg:hidden group-hover:block z-50 w-[70vw] -left-[600px] bg-blue-500 h-[700px] top-[69px]"
+          class="absolute hidden lg:hidden group-hover:block z-50 w-[60vw] -left-[600px] bg-blue-500 h-[700px] top-[69px]"
         >
           <div class="grid grid-cols-3 gap-6 p-4">
             <div>
               <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
               <div
-                class="space-y-2 border-b py-1.5"
+                class="space-y-2 border-b py-3"
                 v-for="(brand, index) in brandv"
                 :key="index"
               >
@@ -202,7 +199,7 @@ const brandv = [
             <div>
               <h2 class="text-xl font-semibold text-white">Apple phones</h2>
               <div
-                class="space-y-2 border-b py-1.5"
+                class="space-y-2 border-b py-3"
                 v-for="(brand, index) in brandv"
                 :key="index"
               >
@@ -216,16 +213,16 @@ const brandv = [
               </div>
             </div>
 
-            <div>
+            <div class="cols-span-2 text-end">
               <div
-                class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+                class="flex flex-col justify-end px-4 py-4 text-center bg-white rounded-xl max-w-xl  min-h-[50vh]"
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
                 </div>
                 <div class="flex items-center justify-center my-12">
                   <a href="#">
-                    <img class="h-64" :src="phone" alt="img" />
+                    <img class="w-56" :src="phone" alt="img" />
                   </a>
                 </div>
                 <div class="apple-tx-buy">
@@ -243,8 +240,8 @@ const brandv = [
       </div>
       <div class="text-lg font-extralight">
         <h2 class="font-bold">Sales Line:</h2>
-        <p>Mon-Fri 9am-6pm</p>
-        <p>020 4516 3885</p>
+        <p class="font-medium">Mon-Fri 9am-6pm</p>
+        <p class="font-medium">020 4516 3885</p>
       </div>
     </div>
   </div>

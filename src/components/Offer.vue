@@ -12,7 +12,7 @@
               alt="Apple iPhone 13 Pro Silver Front View"
             />
             <div class="absolute top-0 right-0 flex justify-end">
-              <button class="px-3 py-1 text-xs text-white rounded-full bg-aqua">
+              <button class="px-3 py-1 text-xs text-white rounded-full bg-blue-500">
                 New-Brand New
               </button>
             </div>
@@ -73,7 +73,7 @@
                       leave-to="opacity-0 scale-95"
                     >
                       <DialogPanel
-                        class="z-10 w-full max-w-2xl px-6 py-5 overflow-hidden text-left align-middle transition-all transform bg-white rounded shadow-xl"
+                        class="z-10 w-full max-w-5xl px-6 py-5 overflow-hidden text-left align-middle transition-all transform bg-white rounded shadow-xl"
                       >
                         <DialogTitle
                           as="h3"

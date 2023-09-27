@@ -1,41 +1,41 @@
 <script setup></script>
 
 <template>
-  <footer class="relative text-white bg-gray-900">
-    <div class="px-4 py-10 md:px-10">
+  <footer class="relative text-white bg-[#102133] py-5 ">
+    <div class="  container">
       <div class="grid grid-cols-1 gap-4 md:grid-cols-6">
         <div class="md:col-span-1">
-          <ul class="mt-2 md:text-[18px] text-[14px]">
-            <li class="text-[#fff]">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-400 space-y-3">
+            <li class="">
               <a
                 href="https://www.mozillion.com/new-to-mozillion"
-                class="text-sm"
+                class="text-white"
                 >Business</a
               >
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a
                 href="https://www.mozillion.com/new-to-mozillion"
-                class="text-sm"
+                class=""
                 >How it works</a
               >
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a href="https://www.mozillion.com/search-phone" class="">Buy</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a href="https://www.mozillion.com/search-phone-sale" class=""
                 >Sell</a
               >
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a
                 href="https://www.mozillion.com/public/resources/businesses-buy"
                 class=""
                 >Business Customers</a
               >
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a
                 href="https://www.mozillion.com/public/resources/businesses-sell"
                 class=""
@@ -44,50 +44,47 @@
             </li>
           </ul>
         </div>
-        ​
         <div class="md:col-span-1">
-          <ul class="mt-2 md:text-[18px] text-[14px]">
-            <li class="text-[#fff]">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-400">
+            <li class="text-white">
               <a href="https://www.mozillion.com/resources/help">Support</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a href="https://www.mozillion.com/resources/help">Help</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a href="https://www.mozillion.com/returns-refunds"
                 >Returns &amp; Refunds</a
               >
             </li>
-            <li class="text-[#fff]">
+            <li class="">
               <a href="https://www.mozillion.com/about-us">About</a>
             </li>
           </ul>
         </div>
-        ​
         <div class="md:col-span-1">
-          <ul class="mt-2 md:text-[18px] text-[14px]">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-400 ">
             <li class="text-[#fff]">
               <a href="https://www.mozillion.com/legal">legel</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="text-[#f ff]">
               <a href="https://www.mozillion.com/legal">Cookie policy</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="text-[#f ff]">
               <a href="https://www.mozillion.com/term-of-use">T&amp;Cs</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="text-[#f ff]">
               <a href="https://www.mozillion.com/sim-only">SIM Only</a>
             </li>
-            <li class="text-[#fff]">
+            <li class="text-[#f ff]">
               <a href="https://www.mozillion.com/pages/privacy-policy"
                 >Privacy policy</a
               >
             </li>
           </ul>
         </div>
-        ​
         <div
-          class="md:col-span-3 col-span-1 md:px-10 px-2 md:py-6 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-1/2 md:bg-blue-600 md:rounded-bl-[200px]"
+          class="md:col-span-3 col-span-1 xl:px-24 px-2 md:py-6 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[50%] md:bg-blue-600 md:rounded-bl-[300px]"
         >
           <div class="">
             <h3 class="md:text-[30px] text-[20px] text-[#fff]">
@@ -100,22 +97,22 @@
               action=""
             >
               <div
-                class="flex flex-col items-center justify-between mt-4 md:flex-row gap-x-7"
+                class="flex flex-col items-center justify-center mt-4 md:flex-row gap-x-7"
               >
-                <div class="w-full mb-2 md:w-1/2 md:mb-0">
+                <div class="w-full mb-2  md:mb-0">
                   <input
                     type="text"
                     id="newsletter_name"
-                    class="w-full px-4 py-3 border-gray-300 rounded-full"
+                    class="w-full px-8 py-3 border-gray-300 rounded-full max-w-xs"
                     name="name"
                     placeholder="Enter your name"
                   />
                 </div>
-                <div class="w-full md:w-1/2">
+                <div class="w-full ">
                   <input
                     type="email"
                     id="newsletter_email"
-                    class="w-full px-4 py-3 border-gray-300 rounded-full focus:border-blue-500 focus:ring focus:ring-blue-200"
+                    class="w-full px-8 py-3 border-gray-300 rounded-full focus:border-blue-500 focus:ring focus:ring-blue-200 max-w-xs"
                     name="email"
                     placeholder="Enter your email"
                   />
