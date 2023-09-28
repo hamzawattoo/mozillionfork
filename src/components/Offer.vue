@@ -1,5 +1,85 @@
 <template>
   <div class="bg-blue-50">
+    <div class="container !px-0 !py-3">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol role="list" class="flex items-center space-x-4">
+          <li>
+            <div>
+              <a
+                href="#"
+                class="ml-4 text-sm font-light text-gray-500 hover:text-gray-700"
+                >Home</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <a
+                href="#"
+                class="ml-4 text-sm font-light text-gray-500 hover:text-gray-700"
+                >Buy</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <a
+                href="#"
+                class="ml-4 text-sm font-light text-gray-500 hover:text-gray-700"
+                aria-current="page"
+                >Apple</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <a
+                href="#"
+                class="ml-4 text-sm font-light text-gray-500 hover:text-gray-700"
+                aria-current="page"
+                >iPhone 14 Pro Max</a
+              >
+            </div>
+          </li>
+        </ol>
+      </nav>
+    </div>
     <div class="px-5 Iphone14-main lg:px-28">
       <div class="grid grid-cols-1 gap-6 py-12 lg:grid-cols-3">
         <div class="card-body">
@@ -11,8 +91,10 @@
               src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1632487722/glifakqdvbpbeyrsrnil.png"
               alt="Apple iPhone 13 Pro Silver Front View"
             />
-            <div class="absolute top-0 right-0 flex justify-end">
-              <button class="px-3 py-1 text-xs text-white rounded-full bg-blue-500">
+            <div class="absolute -top-5 right-5 flex justify-end">
+              <button
+                class="px-6 py-1 font-medium text-white rounded-full bg-[#1F9FFF]"
+              >
                 New-Brand New
               </button>
             </div>
@@ -31,7 +113,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5"
+                  class="w-7 h-7"
                 >
                   <path
                     stroke-linecap="round"
@@ -40,7 +122,7 @@
                   />
                 </svg>
 
-                <span class="text-sm font-light text-left text-gray-600"
+                <span class="text-lg font-light text-left text-gray-600"
                   >View All asking Price</span
                 >
               </button>
@@ -210,7 +292,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5"
+                  class="w-7 h-7"
                 >
                   <path
                     stroke-linecap="round"
@@ -219,7 +301,7 @@
                   />
                 </svg>
 
-                <span class="text-sm font-light text-left text-gray-600"
+                <span class="text-lg font-light text-left text-gray-600"
                   >View All offers</span
                 >
               </button>
@@ -380,10 +462,10 @@
               </div>
               <div class="flex items-center justify-between px-3 py-2">
                 <div>
-                  <p class="text-2xl font-light">Total Price</p>
+                  <p class="text-lg font-light">Total Price</p>
                 </div>
                 <div>
-                  <p class="text-2xl font-light">£ {{ totalPrice }}</p>
+                  <p class="text-lg font-light">£ {{ totalPrice }}</p>
                 </div>
               </div>
             </div>

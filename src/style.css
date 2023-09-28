@@ -10,8 +10,18 @@
 html {
   scroll-behavior: smooth;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
-  background-color: #e9eff4;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body {
+  background-color: #F5F9FC;
 }
 .bg-blue {
   background-color: #102133;

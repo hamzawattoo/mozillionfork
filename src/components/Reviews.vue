@@ -5,7 +5,7 @@ import ReviewCards from "./ReviewCards.vue";
   <section>
     <div class="text-center">
       <div class="my-12 text-center">
-        <h1 class="block p-0 m-0 text-2xl font-light">Best-Selling Phones</h1>
+        <h1 class="block p-0 m-0 text-2xl font-light">Mozillion Reviews</h1>
       </div>
       <div
         class="flex items-center justify-center gap-3 font-semibold text-gray-800"
@@ -110,7 +110,7 @@ import ReviewCards from "./ReviewCards.vue";
     </div>
     <ReviewCards />
     <div class="flex flex-col items-center justify-center px-5">
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center text-sm font-light">
         <div id="rating-long" class="tp-widget-rating tp-widget-rating-long">
           Rated <strong>4.8</strong> / 5 based on
           <a
@@ -129,8 +129,8 @@ import ReviewCards from "./ReviewCards.vue";
         </div>
       </div>
       <div
-        class="mt-5"
-        style="position: relative; height: 0px; width: 100px; height: 5%"
+        class=""
+        style="position: relative; height: 0px; width: 80px; height: 5%"
       >
         <svg
           role="img"
