@@ -4,7 +4,7 @@ import removebg from "../../images/download-removebg-preview.png";
 
 <template>
   <section>
-    <div class="bg-purple-800 min-h-[300px] md:min-h-[600px] relative">
+    <div class="bg-purple-800 min-h-[300px] md:min-h-[65vh] relative">
       <div class="px-2 pt-12 mx-auto max-w-7xl">
         <div class="justify-between md:flex">
           <div class="">
@@ -27,17 +27,17 @@ import removebg from "../../images/download-removebg-preview.png";
         </div>
 
         <div
-          class="absolute left-0 right-0 z-10 flex items-center justify-center gap-4 bottom-5 md:bottom-20"
+          class="absolute left-0 right-0 z-10 flex items-center justify-center gap-4 bottom-5 md:bottom-40"
         >
           <div
-            class="px-3 py-1 font-thin text-white bg-blue-500 hover:bg-blue-900 border-2 border-blue-500 border-solid rounded-full text-uppercase md:mr-10 md:px-6 md:py-3 md:text-2xl"
+            class="px-3 py-1 font-thin text-white bg-blue-500 hover:bg-blue-900 border-2 border-blue-500 border-solid rounded-full text-uppercase md:mr-10 md:px-10 md:py-3 md:text-2xl"
           >
             <a class="" href=""
               >Buy a Phone</a
             >
           </div>
           <div
-            class="px-3 py-1 font-thin text-white uppercase bg-green-600 hover:bg-green-800 border-2 border-white border-solid rounded-full md:border-3 md:px-6 md:py-3 md:text-2xl"
+            class="px-3 py-1 font-thin text-white uppercase bg-green-600 hover:bg-green-800 border-2 border-white border-solid rounded-full md:border-3 md:px-10 md:py-3 md:text-2xl"
           >
             <a class="" href="https://www.mozillion.com/search-brand-sale/apple"
               >Sell a Phone</a

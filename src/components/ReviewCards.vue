@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center  m-auto container !py-10">
+  <div class="flex items-center justify-center m-auto container !max-w-[1500px] !pt-10 !pb-2">
     <swiper
     :breakpoints="{
       300: { slidesPerView: 1 },
@@ -129,8 +129,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-bold ">Great</p>
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -258,7 +258,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -386,7 +386,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -513,7 +513,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -640,7 +640,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -767,7 +767,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -894,7 +894,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -1021,7 +1021,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -1148,7 +1148,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -1275,7 +1275,7 @@
           </div>
           <div class="">
             <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-medium">
+            <p class="text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>

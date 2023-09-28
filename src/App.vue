@@ -64,8 +64,8 @@ export default {
 <style scoped>
 #scrollButton {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 60px;
+  right: 30px;
   padding: 10px;
   background-color: rgb(148, 148, 148);
   color: white;

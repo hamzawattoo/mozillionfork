@@ -8,7 +8,7 @@
       <div class="flex gap-2 carousel__item">
         <div class="">
           <div class="px-8 py-2 w-80">
-            <h2 class="text-xl font-semibold text-white">Samsddfung Phones</h2>
+            <h2 class="text-xl font-semibold text-white">Apple Phones</h2>
             <div
               class="space-y-2 border-b py-3"
               v-for="(brand, index) in brandv"
@@ -46,7 +46,7 @@
       <div class="flex gap-2">
         <div>
           <div class="px-8 py-2 w-80">
-            <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
+            <h2 class="text-xl font-semibold text-white">Google Phones</h2>
             <div
               class="space-y-2 border-b py-3"
               v-for="(brand, index) in brandv"
@@ -108,6 +108,9 @@
 <style>
 .carousel__container {
   scroll-behavior: smooth;
+}
+.apple-brand {
+  font-weight: 500;
 }
 </style>
 

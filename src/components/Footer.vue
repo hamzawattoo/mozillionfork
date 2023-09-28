@@ -3,9 +3,9 @@
 <template>
   <footer class="relative text-white bg-[#102133] py-5 ">
     <div class="  container">
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-6">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-6 pb-14">
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-400 space-y-3">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
             <li class="">
               <a
                 href="https://www.mozillion.com/new-to-mozillion"
@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-400">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300">
             <li class="text-white">
               <a href="https://www.mozillion.com/resources/help">Support</a>
             </li>
@@ -63,7 +63,7 @@
           </ul>
         </div>
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-400 ">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 ">
             <li class="text-[#fff]">
               <a href="https://www.mozillion.com/legal">legel</a>
             </li>
@@ -135,7 +135,7 @@
               <div class="mt-4 md:flex md:justify-end">
                 <button
                   type="submit"
-                  class="md:block-none block md:w-auto w-full md:bg-[#102133] bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-[#102133] focus:outline-none focus:ring focus:ring-blue-200"
+                  class="md:block-none block md:w-auto w-full md:bg-[#102133] bg-blue-600 hover:bg-blue-950 text-white px-6 py-2 rounded-md hover:bg-[#102133] focus:outline-none focus:ring focus:ring-blue-200"
                   name="submit_newsletter"
                   id="submit_newsletter"
                 >
@@ -150,7 +150,7 @@
     </div>
     <!-- ################################# -->
     <div
-      class="flex flex-col items-center justify-between px-6 py-10 mt-1 md:flex-row md:mt-10 gap-y-4"
+      class="flex flex-col items-center justify-between px-6 py-10 mt-1 md:flex-row md:mt-10 gap-y-4 container"
     >
       <div>
         <p>©2023 Mozillion. All Rights Reserved.</p>

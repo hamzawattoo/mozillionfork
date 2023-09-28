@@ -8,13 +8,15 @@ const brands = [
   "Current Best Buys",
   "Sell Your Phones",
   "Popular Searches:",
-  "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
-  "Sell Your Phones",
+  "Same Day Delivery",
+  "Camera Phones",
+  "Budget Phones",
+  "Foldable Phones",
+  "Android Phones",
+  "Sale",
+  "Premium Phone",
+  "Large Screen Phone",
+
 ];
 const brandv = [
   "Apples Phones",
@@ -34,15 +36,15 @@ const brandv = [
 </script>
 
 <template>
-  <div class="bg-[#102133] w-full !px-4">
+  <div class="bg-[#102133] w-full !px-4 flex  ">
     <div
-      class="max-w-[1920px] mx-auto items-center justify-around px-[50px] hidden text-white lg:flex"
+      class="max-w-7xl w-full mx-auto items-center justify-between px-[190px] hidden text-white lg:flex pt-1"
     >
       <div class="relative h-full group">
         <button
           class="px-6 py-6 text-xl border-b-2 border-transparent hover:bg-white hover:bg-opacity-10 font-extralight hover:border-white"
         >
-          Phone
+          Phones
         </button>
         <div
           class="absolute hidden group-hover:block z-50 min-w-[100vw] xl:min-w-[80vw] h-[80vh] w-full -left-20 bg-blue-500 top-[69px]"
@@ -51,7 +53,7 @@ const brandv = [
             <div class="px-8 py-2 min-w-fit">
               <div class="flex flex-col">
                 <div
-                  class="space-y-6 border-b py-3"
+                  class="space-y-6 border-b py-4"
                   v-for="(brand, index) in brands"
                   :key="index"
                 >
@@ -238,12 +240,16 @@ const brandv = [
           </div>
         </div>
       </div>
-      <div class="text-lg font-extralight">
-        <h2 class="font-bold">Sales Line:</h2>
+     
+    </div>
+    <div class="text-lg font-extralight text-white w-[19vw] pt-3 hidden text-white lg:flex pt-1">
+      <div class="">
+          <h2 class="font-bold">Sales Line:</h2>
         <p class="font-medium">Mon-Fri 9am-6pm</p>
         <p class="font-medium">020 4516 3885</p>
       </div>
-    </div>
+      
+      </div>
   </div>
 </template>
 <script>

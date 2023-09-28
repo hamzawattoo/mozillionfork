@@ -12,7 +12,7 @@ import klarna from "../../images/klarna.svg";
 <template>
   <section>
     <div class="bg-white">
-      <div class="flex px-5 py-4 mx-auto space-x-5 bg-white md:max-w-[1400px]">
+      <div class="flex px-5 py-1 mx-auto space-x-5 bg-white md:max-w-[1400px]">
         <div class="items-center hidden md:w-80 lg:flex">
           <div class="max-w-[60px] max-h-[80px] w-full  ">
             <img class="w-full h-auto object-cover" :src="covered" alt="img" />
@@ -57,7 +57,7 @@ import klarna from "../../images/klarna.svg";
                     style="
                       position: absolute;
                       height: 100%;
-                      width: 100%;
+                      width: 70%;
                       left: 0px;
                       top: 0px;
                     "

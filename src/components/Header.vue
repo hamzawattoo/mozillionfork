@@ -1,16 +1,16 @@
 <script setup></script>
 
 <template>
-  <nav class="sticky top-0 z-50 border-b bg-blue">
-    <div class="flex items-center justify-between gap-3 px-8  lg:items-baseline">
+  <nav class="sticky top-0 z-50 border-b bg-blue ">
+    <div class="flex items-center justify-between gap-x-3  md:px-[30px] py-4  lg:items-center">
       <div
-        class="flex flex-col items-baseline justify-between lg:flex-row xl:gap-16 pt-6 pb-6"
+        class="flex flex-col  items-left justify-between lg:flex-row xl:gap-x-16 mt-3 px-3"
       >
-        <div class="flex flex-col items-baseline xl:flex-row xl:gap-8">
+        <div class="flex flex-col items-baseline xl:flex-row xl:gap-x-8">
           <div class="">
-            <a class="new-logo w-[160px]" href="https://www.mozillion.com/">
+            <a class="new-logo w-[10vw] " href="https://www.mozillion.com/">
               <img
-                class="w-full  "
+                class="w-[30vw] md:w-auto h-full object-contain "
                 src="https://res.cloudinary.com/mozillion/image/upload/v1623322043/logo_rvaicy.svg"
                 alt="Mozillion Logo"
               />
@@ -22,7 +22,7 @@
             Mobile's first marketplace
           </div>
         </div>
-        <div class="flex items-center text-white">
+        <div class="flex items-center text-white  mt-1 md:ml-3">
           <span class="mt-0 ml-0 mr-3 text-lg"> Excellent </span>
           <svg
             class="w-12"
@@ -116,7 +116,7 @@
               ></path>
             </g>
           </svg>
-          <div class="hidden xl:block">
+          <div class="hidden xl:block ml-2">
             <div>
               <svg
                 class=""
@@ -124,7 +124,7 @@
                 aria-labelledby="trustpilotLogo-1v5gi0h4n2z"
                 viewBox="0 0 126 31"
                 xmlns="http://www.w3.org/2000/svg"
-                style="height: 10%; width: 80px; left: 0; top: 0"
+                style=" width: 70px; left: 0; top: 0"
               >
                 <title style="color: white" id="trustpilotLogo-1v5gi0h4n2z">
                   Trustpilot
@@ -150,13 +150,13 @@
         </div>
       </div>
       <div
-        class="flex items-end gap-6 lg:items-baseline justify-end lg:justify-center md:min-w-[50%]"
+        class="flex items-end gap-4 lg:items-center justify-end lg:justify-between md:min-w-[50%] pl-7 pr-2"
       >
         <div
           class="flex items-center justify-between hidden px-3 py-2 bg-white border lg:flex rounded-full"
         >
           <input
-            class="pl-2 pr-12 py-1 bg-transparent focus:outline-none"
+            class="pl-2 pr-16 py-1 bg-transparent focus:outline-none"
             type="search"
             placeholder="Search"
           />
@@ -177,7 +177,7 @@
             </svg>
           </span>
         </div>
-        <div class="relative flex items-center justify-between hidden gap-12 lg:flex">
+        <div class="relative flex items-center justify-between hidden gap-[50px] lg:flex">
           <div class="group">
             <a
               class="relative flex items-center h-full  text-white lg:text-[1vw] font-extralight"
@@ -252,23 +252,11 @@
             @click="open = !open"
             class="relative flex items-center text-2xl text-white font-extralight"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="0.5"
-              stroke="currentColor"
-              class="w-10"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-              />
-            </svg>
+            
+          <img src="https://www.mozillion.com/img/user-icon.svg" alt="">
           </button>
         </div>
-        <div class="flex items-center gap-2 lg:hidden">
+        <div class="flex flex-row-reverse items-center gap-2 lg:hidden">
           <button @click="toggleMobileNav" class="block lg:hidden">
             <span>
               <svg
