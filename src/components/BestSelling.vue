@@ -20,7 +20,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
       <div class="flex items-center justify-center my-12">
         <a href="#">
           <!-- Use card.image as the src attribute -->
-          <img class="w-28 md:w-56" :src="card.image" alt="img" />
+          <img class="w-28 md:w-56 max-h-72 object-contain" :src="card.image" alt="img" />
         </a>
       </div>
       <div class="apple-tx-buy">
@@ -42,50 +42,50 @@ export default {
       cardsData: [
         {
           title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1632495666/smmfbcc66ckifjybcxhm.png',
           price: 639,
           link: '#'
         },
         {
           title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1684141794/nc2op5gqq1rbmyc0wq8x.png',
+          price: 539,
+          link: '#'
+        },
+        {
+          title: 'Apple iPhone 13 Pro',
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662627859/rfzq0yaazxekewv96upt.png',
+          price: 1639,
+          link: '#'
+        },
+        {
+          title: 'Apple iPhone 13 Pro',
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1676291732/xjotkbirjqyrzhk3xgrv.png',
+          price: 239,
+          link: '#'
+        },
+        {
+          title: 'Apple iPhone 13 Pro',
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1684141493/egpjkzh7erckfyhx27yt.png',
           price: 639,
           link: '#'
         },
         {
           title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
-          price: 639,
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662627859/rfzq0yaazxekewv96upt.png',
+          price: 629,
           link: '#'
         },
         {
           title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
-          price: 639,
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1676291732/xjotkbirjqyrzhk3xgrv.png',
+          price: 339,
           link: '#'
         },
         {
           title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
-          price: 639,
-          link: '#'
-        },
-        {
-          title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
-          price: 639,
-          link: '#'
-        },
-        {
-          title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
-          price: 639,
-          link: '#'
-        },
-        {
-          title: 'Apple iPhone 13 Pro',
-          image: '/images/glifakqdvbpbeyrsrnil.webp',
-          price: 639,
+          image: 'https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662627859/rfzq0yaazxekewv96upt.png',
+          price: 939,
           link: '#'
         },
        
