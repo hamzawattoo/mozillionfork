@@ -17,5 +17,6 @@ import Header from "../components/Header.vue";
     <Reviews />
     <PopularHandset />
     <Footer />
+
   </div>
 </template>
