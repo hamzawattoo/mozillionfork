@@ -1,4 +1,8 @@
+<script setup>
+import login from "../components/login.vue";
+</script>
 <template>
+  <login />
   <div class="bg-blue-50">
     <div class="container !px-0 !py-3">
       <nav class="flex" aria-label="Breadcrumb">
@@ -8,8 +12,7 @@
               <a
                 href="#"
                 class="ml-4 text-sm font-light text-gray-500 hover:text-gray-700"
-                >Home</a
-              >
+                >Home</a>
             </div>
           </li>
           <li>
@@ -424,16 +427,186 @@
             <div></div>
           </div>
           <div class="flex justify-end mt-8">
-            <button
+            <button @click="openModal"
               class="px-8 py-2 font-light text-white duration-300 ease-in-out bg-blue-700 rounded-full hover:bg-black"
             >
-              Countinue
+              Next
             </button>
           </div>
         </div>
       </div>
     </div>
   </div>
+<transition name="fade">
+  <div v-if="showModal" class="ease-in duration-800 relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div
+                    class="relative transform overflow-hi dden rounded-lg bg-white px-4 pb-4 pt-6 sm:mx-4 text-left shadow-xl transition-all sm:my-8  w-full sm:max-w-7xl sm:py-8 sm:px-10">
+                    <div>
+                        <!-- start -->
+                       <button @click="closeModal" class="bg-black w-8 h-8 rounded-full absolute -top-4 -right-3">
+                        <span  class="close-button text-xl text-white ">&times;</span>
+                       </button>
+                        <div class="flex flex-col sm:flex-row max-w-4xl mx-auto space-y-2 sm:space-y-0 sm:space-x-4">
+                            <button @click="activeTab = 'tab1'"
+                                :class="{ 'bg-blue-600 text-white': activeTab === 'tab1', 'border border-blue-600 text-blue-600': activeTab !== 'tab1' }"
+                                class="flex-grow py-2 rounded-full focus:outline-none">
+                                Existing User?
+                            </button>
+                            <button @click="activeTab = 'tab2'"
+                                :class="{ 'bg-blue-600 text-white': activeTab === 'tab2', 'border border-blue-600 text-blue-600': activeTab !== 'tab2' }"
+                                class="flex-grow py-2  rounded-full focus:outline-none">
+                                New User?
+                            </button>
+                        </div>
+
+                        <div class="py-8 bg-white rounded-b-lg">
+                            <div v-if="activeTab === 'tab1'">
+                                <div class="space-y-5">
+                                    <div class="headinphonesg text-center">
+                                        <h1 class="text-[#102133] text-4xl font-light">Login</h1>
+                                    </div>
+                                    <div class="">
+                                        <div class="tab-content">
+                                            <div id="email" class="tab-pane active">
+                                                <form class="space-y-5" method="POST">
+
+
+                                                    <div class="search-col form-group ">
+                                                        <label class="sr-only">Email Address</label>
+                                                        <input class="py-3 w-full px-6 rounded-full border border-gray-300 text-gray-400"
+                                                            placeholder="Enter Email Address" autofocus="" name="email"
+                                                            type="text">
+                                                    </div>
+                                                    <div class=" relative">
+                                                        <div class="search-col form-group ">
+                                                            <label class="sr-only">Password</label>
+                                                            <input
+                                                                class="py-3 w-full px-6 rounded-full border border-gray-300 text-gray-400"
+                                                                placeholder="Password" autofocus="" name="email"
+                                                                type="text">
+                                                        </div>
+                                                        <label class="absolute right-0 containerEye">
+                                                            <input type="checkbox" checked="checked">
+                                                            <svg class="eye" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                                viewBox="0 0 576 512">
+                                                                <path
+                                                                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg class="eye-slash" xmlns="http://www.w3.org/2000/svg"
+                                                                height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z">
+                                                                </path>
+                                                            </svg>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="text-center">
+                                                        <span class="text-md font-medium  text-gray-500"><a href="#">Forgot
+                                                                Password?</a></span>
+                                                        <!-- <button type="button" class="btn-custom" id="login_button">Log in</button> -->
+                                                    </div>
+                                                    <div class="">
+                                                        <button
+                                                            class="text-white font-extralight text-2xl bg-blue-600 max-w-[250px]  py-2.5 rounded-full  w-full ">Login</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                           
+                                        </div>
+                                        <!-- Nav tabs -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-else-if="activeTab === 'tab2'">
+                                <div class="space-y-5">
+                                    <div class="heading text-center">
+                                        <h1 class="text-[#102133] text-4xl font-light">Guest Checkout</h1>
+                                        <p class="text-gray-900 text-lg pt-5">You can create a free account after checkout for a faster experience next time.</p>
+                                    </div>
+                                    <div class="">
+                                        <div class="tab-content">
+                                            <div id="email" class="tab-pane active">
+                                                <form class="space-y-5" method="POST">
+
+                                                    <div class="search-col form-group ">
+                                                        <label class="sr-only">First Name</label>
+                                                        <input class="py-3.5 w-full px-6 rounded-full border border-gray-300 text-gray-500 text-lg"
+                                                            placeholder="First Name" autofocus="" name="text"
+                                                            type="text">
+                                                    </div>
+                                                    <div class="search-col form-group ">
+                                                        <label class="sr-only">Surname</label>
+                                                        <input class="py-3.5 w-full px-6 rounded-full border border-gray-300 text-gray-500 text-lg"
+                                                            placeholder="Surname" autofocus="" name="text"
+                                                            type="text">
+                                                    </div>
+                                                    <div class=" relative">
+                                                        <div class="search-col form-group ">
+                                                            <label class="sr-only">Email</label>
+                                                            <input
+                                                                class="py-3.5 w-full px-6 rounded-full border border-gray-300 text-gray-500 text-lg"
+                                                                placeholder="Email" autofocus="" name="email"
+                                                                type="text">
+                                                        </div>
+                                                        <label class="absolute right-0 containerEye">
+                                                            <input type="checkbox" checked="checked">
+                                                            <svg class="eye" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                                viewBox="0 0 576 512">
+                                                                <path
+                                                                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg class="eye-slash" xmlns="http://www.w3.org/2000/svg"
+                                                                height="1em" viewBox="0 0 640 512">
+                                                                <path
+                                                                    d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z">
+                                                                </path>
+                                                            </svg>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="text-center">
+                                                        <span class="text-md font-medium  text-gray-500"><a href="#">Forgot
+                                                                Password?</a></span>
+                                                        <!-- <button type="button" class="btn-custom" id="login_button">Log in</button> -->
+                                                    </div>
+                                                    <div class="flex items-center mb-4">
+                                                        <input id="default-checkbox" type="checkbox" value="" class="w-6 h-6 rounded-full text-blue-600 bg-gray-100 border-gray-300  focus:ring-blue-500  ">
+                                                        <label for="default-checkbox" class="ml-2 text-md font-medium text-gray-400">I agree to Mozillion's <span class="text-blue-500">Terms & condition</span></label>
+                                                    </div>
+
+                                                    <div class="flex items-center mb-4">
+                                                        <input id="default-checkbox" type="checkbox" value="" class="w-6 h-6 rounded-full text-blue-600 bg-gray-100 border-gray-300  focus:ring-blue-500  ">
+                                                        <label for="default-checkbox" class="ml-2 text-md font-medium text-gray-400">Keep me up to speed with Mozillion’s offers, news and new phones as they launch</label>
+                                                    </div>
+                                                    <div class="">
+                                                        <button
+                                                            class="text-white font-extralight text-2xl bg-blue-600 max-w-[250px]  py-2.5 rounded-full  w-full">Next</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                           
+                                        </div>
+                                        <!-- Nav tabs -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </transition> 
 </template>
 
 <script>
@@ -455,6 +628,8 @@ export default {
       price: 0,
       totalPrice: 0,
       enabled: true,
+      activeTab: 'tab1',
+      showModal: false,
     };
   },
   methods: {
@@ -469,6 +644,13 @@ export default {
     changeEnable(value) {
       this.enabled = value;
     },
+    openModal() {
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+    },
+    // Other methods can be defined here if needed
   },
   components: {
     TransitionRoot,
@@ -481,4 +663,15 @@ export default {
     BuyNow,
   },
 };
+
 </script>
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.10s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+</style>

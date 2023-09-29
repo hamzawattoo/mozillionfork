@@ -4,7 +4,7 @@
   <nav class="sticky top-0 z-50 border-b bg-blue ">
     <div class="flex items-center justify-between gap-x-3  md:px-[30px] py-4  lg:items-center">
       <div
-        class="flex flex-col  items-left justify-between lg:flex-row xl:gap-x-16 mt-3 px-3"
+        class="flex flex-col items-left justify-between lg:flex-row xl:gap-x-16 mt-3"
       >
         <div class="flex flex-col items-baseline xl:flex-row xl:gap-x-8">
           <div class="">
