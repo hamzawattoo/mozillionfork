@@ -15,7 +15,7 @@
           <li>
             <div class="flex items-center">
               <svg
-                class="h-5 w-5 flex-shrink-0 text-gray-400"
+                class="flex-shrink-0 w-5 h-5 text-gray-400"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
@@ -36,7 +36,7 @@
           <li>
             <div class="flex items-center">
               <svg
-                class="h-5 w-5 flex-shrink-0 text-gray-400"
+                class="flex-shrink-0 w-5 h-5 text-gray-400"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
@@ -58,7 +58,7 @@
           <li>
             <div class="flex items-center">
               <svg
-                class="h-5 w-5 flex-shrink-0 text-gray-400"
+                class="flex-shrink-0 w-5 h-5 text-gray-400"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
@@ -91,7 +91,7 @@
               src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1632487722/glifakqdvbpbeyrsrnil.png"
               alt="Apple iPhone 13 Pro Silver Front View"
             />
-            <div class="absolute -top-5 right-5 flex justify-end">
+            <div class="absolute flex justify-end -top-5 right-5">
               <button
                 class="px-6 py-1 font-medium text-white rounded-full bg-[#1F9FFF]"
               >
@@ -397,78 +397,31 @@
           class="order-first card-body lg:order-last lg:col-span-2 xl:col-span-1"
         >
           <div class="pt-8 bg-white border shadow-lg rounded-xl">
-            <div class="py-2 bg-blue-700">
-              <div class="flex items-center justify-center gap-2 text-white">
-                <div>
-                  <p class="text-2xl">Make an offer</p>
-                </div>
-                <div>
-                  <button
-                    type="button"
-                    class="relative inline-flex items-center justify-center flex-shrink-0 w-10 h-3 rounded-full cursor-pointer group focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
-                    role="switch"
-                    aria-checked="false"
-                  >
-                    <span class="sr-only">Use setting</span>
-                    <span
-                      aria-hidden="true"
-                      class="absolute w-full h-full rounded-md pointer-events-none"
-                    ></span>
-                    <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-                    <span
-                      aria-hidden="true"
-                      class="absolute h-4 mx-auto transition-colors duration-200 ease-in-out bg-blue-500 rounded-full pointer-events-none w-9"
-                    ></span>
-                    <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                    <span
-                      aria-hidden="true"
-                      class="absolute left-0 inline-block w-5 h-5 transition-transform duration-200 ease-in-out transform translate-x-0 bg-blue-100 border border-gray-200 rounded-full shadow pointer-events-none ring-0"
-                    ></span>
-                  </button>
-                </div>
-                <div>
-                  <p class="text-2xl">Buy Now</p>
-                </div>
-              </div>
+            <div
+              class="flex items-center justify-center gap-4 py-2 bg-blue-700"
+            >
+              <span class="text-xl text-white">Make an offer</span>
+              <Switch
+                @click="changeEnable(!enabled)"
+                v-model="enabled"
+                :class="enabled ? 'bg-[#6383e4]' : 'bg-[#6383e4]'"
+                class="relative inline-flex h-[26px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+              >
+                <span
+                  aria-hidden="true"
+                  :class="enabled ? 'translate-x-9' : 'translate-x-0'"
+                  class="pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+                />
+              </Switch>
+              <span class="text-xl text-white">Buy Now</span>
             </div>
-            <div class="flex items-center justify-center pt-6">
-              <input
-                class="max-w-xs px-4 py-3 text-2xl text-center rounded-full outline-none bg-blue-50 placeholder-middle"
-                type="number"
-                placeholder="£"
-                v-model="price"
-                @input="setPrice($event.target.value)"
-              />
+            <div v-if="!enabled">
+              <MakingOffer />
             </div>
-            <div>
-              <div class="flex justify-center gap-6 pt-16 pb-20">
-                <div>
-                  <p class="font-extralight">Offer expire in (days)</p>
-                </div>
-                <div>
-                  <select
-                    name=""
-                    id=""
-                    class="items-center bg-white border-none outline-none font-extralight"
-                  >
-                    <option value="">1 Day</option>
-                    <option value="">3 Days</option>
-                    <option value="">7 Days</option>
-                    <option value="" selected>14 Days</option>
-                    <option value="">30 Days</option>
-                    <option value="">60 Days</option>
-                  </select>
-                </div>
-              </div>
-              <div class="flex items-center justify-between px-3 py-2">
-                <div>
-                  <p class="text-lg font-light">Total Price</p>
-                </div>
-                <div>
-                  <p class="text-lg font-light">£ {{ totalPrice }}</p>
-                </div>
-              </div>
+            <div v-if="enabled">
+              <BuyNow />
             </div>
+            <div></div>
           </div>
           <div class="flex justify-end mt-8">
             <button
@@ -490,7 +443,10 @@ import {
   Dialog,
   DialogPanel,
   DialogTitle,
+  Switch,
 } from "@headlessui/vue";
+import MakingOffer from "../components/MakingOffer.vue";
+import BuyNow from "../components/BuyNow.vue";
 export default {
   data() {
     return {
@@ -498,6 +454,7 @@ export default {
       deliveryCost: 2.99,
       price: 0,
       totalPrice: 0,
+      enabled: true,
     };
   },
   methods: {
@@ -509,6 +466,9 @@ export default {
       this.totalPrice = Number(this.price) + Number(this.deliveryCost);
       this.totalPrice = this.totalPrice.toFixed(2);
     },
+    changeEnable(value) {
+      this.enabled = value;
+    },
   },
   components: {
     TransitionRoot,
@@ -516,6 +476,9 @@ export default {
     Dialog,
     DialogPanel,
     DialogTitle,
+    MakingOffer,
+    Switch,
+    BuyNow,
   },
 };
 </script>
