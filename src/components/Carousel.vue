@@ -3,7 +3,7 @@
 <template>
   <div class="carousel">
     <div
-      class="flex items-center gap-2 overflow-x-scroll no-scrollbar w-[800px] carousel__container scroll-behavior: smooth; transition: all 0.5s ease-in-out;"
+      class="flex items-center gap-2 overflow-x-scroll no-scrollbar w-[350px] 2xl:w-[800px] carousel__container scroll-behavior: smooth; transition: all 0.5s ease-in-out;"
     >
       <div class="flex gap-2 carousel__item">
         <div class="">

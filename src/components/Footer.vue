@@ -3,7 +3,7 @@
 <template>
   <footer class="relative text-white bg-[#102133] py-5 ">
     <div class="  container">
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-6 pb-14">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-6 pb-14">
         <div class="md:col-span-1">
           <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
             <li class="">
@@ -84,7 +84,7 @@
           </ul>
         </div>
         <div
-          class="md:col-span-3 col-span-1 xl:px-24 px-2 md:py-6 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[50%] md:bg-blue-600 md:rounded-bl-[300px]"
+          class="lg:col-span-3 col-span-1 xl:px-24 px-2 md:py-6 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[50%] md:bg-blue-600 md:rounded-bl-[60px] xl:rounded-bl-[300px]"
         >
           <div class="">
             <h3 class="md:text-[30px] text-[20px] text-[#fff]">
@@ -97,7 +97,7 @@
               action=""
             >
               <div
-                class="flex flex-col items-center justify-center mt-4 md:flex-row gap-x-7"
+                class="flex flex-col items-center justify-center mt-4 lg:flex-row gap-7"
               >
                 <div class="w-full mb-2  md:mb-0">
                   <input

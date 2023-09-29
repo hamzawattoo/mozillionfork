@@ -5,7 +5,7 @@
     <div class="my-12 text-center">
       <h1 class="text-3xl font-light text-gray-800">latest articles</h1>
     </div>
-    <div class="grid grid-cols-1 gap-10 px-5 md:px-24 md:grid-cols-5">
+    <div class="grid grid-cols-1 gap-5 2xl:gap-10 px-5 2xl:px-24 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
       <div
       class="flex flex-col items-center justify-between gap-5 p-4 bg-white rounded-xl"
       v-for="(card, index) in cardsData"

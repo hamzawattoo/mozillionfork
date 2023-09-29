@@ -1,9 +1,10 @@
 <template>
-  <div class="py-3 mt-12 bg-white">
+  <div class="py-3 mt-12 bg-white px-8">
     <div class="mt-14">
       <p class="text-2xl text-center">Popular Handset</p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-6 justify-between items-start container !py-12">
+    <div class="overflow-scroll example">
+       <div class="grid grid-cols-6 gap-24 min-w-[1200px] justify-between items-start container !py-12">
       <div class="first-col">
         <div>
           <p class="block p-0 m-0 text-xl font-light">Apple</p>
@@ -235,6 +236,8 @@
         </div>
       </div>
     </div>
+    </div>
+   
   </div>
 </template>
 
@@ -272,3 +275,14 @@ export default {
   },
 };
 </script>
+<style>
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>
