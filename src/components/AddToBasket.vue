@@ -79,6 +79,11 @@
           </div>
         </div>
       </div>
+      <div class="text-end container">
+        <button class="px-8 text-xl py-1.5 mt-6 mb-4 text-white bg-blue-600 border-2 border-blue-600 hover:text-black hover:bg-white font-normal rounded-3xl">
+            Proceed to Checkout
+        </button>
+      </div>
     </div>
   </section>
 </template>

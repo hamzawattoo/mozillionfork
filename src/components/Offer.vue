@@ -84,7 +84,7 @@ import login from "../components/login.vue";
       </nav>
     </div>
     <div class="px-5 Iphone14-main lg:px-28">
-      <div class="grid grid-cols-1 gap-6 py-12 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-6 py-12 xl:grid-cols-3">
         <div class="card-body">
           <p class="block p-0 m-0 text-2xl font-light">iPhone 14 Pro Max</p>
 
@@ -428,7 +428,7 @@ import login from "../components/login.vue";
           </div>
           <div class="flex justify-end mt-8">
             <button @click="openModal"
-              class="px-8 py-2 font-light text-white duration-300 ease-in-out bg-blue-700 rounded-full hover:bg-black"
+              class="px-16 py-2 font-light text-white duration-300 ease-in-out bg-blue-700 rounded-full hover:bg-black"
             >
               Next
             </button>

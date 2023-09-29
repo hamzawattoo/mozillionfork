@@ -47,9 +47,9 @@ const brandv = [
           Phones
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[100vw] xl:min-w-[80vw] h-[80vh] w-full -left-20 bg-blue-500 top-[69px]"
+          class="absolute hidden group-hover:block z-50 min-w-[90vw] 2xl:min-w-[80vw] h-[80vh] w-full  -left-40 bg-blue-500 top-[69px]"
         >
-          <div class="flex justify-between">
+          <div class="flex justify-start xl:justify-between">
             <div class="px-8 py-2 min-w-fit">
               <div class="flex flex-col">
                 <div
@@ -96,7 +96,7 @@ const brandv = [
           Tablets
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[70vw] min-h-[80vh] -left-[300px] bg-blue-500 h-[700px] top-[69px]"
+          class="absolute hidden group-hover:block z-50 min-w-[90vw] xl:min-w-[70vw] min-h-[80vh] -left-[400px] xl:-left-[300px] bg-blue-500 h-[700px] top-[69px]"
         >
           <div class="grid grid-cols-4 gap-6 px-8 py-6">
             <div>

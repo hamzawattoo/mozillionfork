@@ -2,11 +2,11 @@
 
 <template>
   <nav class="sticky top-0 z-50 border-b bg-blue ">
-    <div class="flex items-center justify-between gap-x-3  md:px-[30px] py-4  lg:items-center">
+    <div class="flex items-center justify-between gap-x-3 px-2.5 md:px-[30px] py-4  lg:items-center">
       <div
-        class="flex flex-col items-left justify-between lg:flex-row xl:gap-x-16 mt-3"
+        class="flex flex-col items-left justify-between lg:flex-row 2xl:gap-x-16 mt-3"
       >
-        <div class="flex flex-col items-baseline xl:flex-row xl:gap-x-8">
+        <div class="flex flex-col items-baseline 2xl:flex-row 2xl:gap-x-8">
           <div class="">
             <a class="new-logo w-[10vw] " href="https://www.mozillion.com/">
               <img
@@ -156,7 +156,7 @@
           class="flex items-center justify-between hidden px-3 py-2 bg-white border lg:flex rounded-full"
         >
           <input
-            class="pl-2 pr-16 py-1 bg-transparent focus:outline-none"
+            class="pl-2 pr-16 py-1 bg-transparent focus:outline-none max-w-[13rem] 2xl:max-w-full"
             type="search"
             placeholder="Search"
           />
@@ -177,10 +177,10 @@
             </svg>
           </span>
         </div>
-        <div class="relative flex items-center justify-between hidden gap-[50px] lg:flex">
+        <div class="relative flex items-center justify-between hidden gap-4 2xl:gap-[50px] lg:flex">
           <div class="group">
             <a
-              class="relative flex items-center h-full  text-white lg:text-[1vw] font-extralight"
+              class="relative flex items-center h-full  text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight"
               href=""
             >
               How  its works
@@ -212,7 +212,7 @@
           </div>
           <div class="group">
             <a
-              class="relative flex items-center  text-lg text-white lg:text-[1vw] font-extralight"
+              class="relative flex items-center  text-lg text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight"
               href=""
             >
               Help & Resources
@@ -243,7 +243,7 @@
             </div>
           </div>
           <a
-            class="relative flex items-center text-lg text-white lg:text-[1vw] font-extralight"
+            class="relative flex items-center text-lg text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight"
             href=""
           >
             Sign Up
@@ -322,4 +322,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 1670px){
+
+}
+</style>

@@ -6,7 +6,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
     <div class="my-12 text-center">
       <h1 class="block p-0 m-0 text-2xl font-light">Best-Selling Phones</h1>
     </div>
-    <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-4 items-center  md:px-24 pb-12">
+    <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 items-center  px-8 xl:px-24 pb-12">
   
     <!-- Use v-for to create cards for each item in the cardsData array -->
     <div
@@ -20,7 +20,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
       <div class="flex items-center justify-center my-12">
         <a href="#">
           <!-- Use card.image as the src attribute -->
-          <img class="w-28 md:w-56 max-h-72 object-contain" :src="card.image" alt="img" />
+          <img class="w-28 md:w-56 max-h-[300px] object-contain" :src="card.image" alt="img" />
         </a>
       </div>
       <div class="apple-tx-buy">
