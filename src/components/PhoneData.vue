@@ -9,9 +9,29 @@
       <button class="text-white hover:text-black">Clear all</button>
     </div>
   </div>
+  <div class="container text-sm text-gray-400 !mt-2">
+      <a href="/">Home</a> > <a href="/buy">Buy</a> >
+      <a href="/buy/apple" class="text-black">Apple</a>
+    </div>
+  <div class="flex items-center justify-between bg-[#1f9fff] py-3 px-4 text-white my-6 block md:hidden">
+    <span class="font-bold">Filters</span>
+    <button @click="toggleFilters"  class="">
+      <span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    </span>
+    </button>
+    
+  </div>
+  <div v-show="open" class="block md:hidden">
+      <Filters />
+    </div>
 
   <div class="container flex">
-    <Filters />
+    <div class="hidden md:block">
+      <Filters />
+    </div>
     <div class="flex-1">
       <div class="flex flex-col items-center justify-center py-8 space-y-5">
         <h2 class="text-4xl font-medium">Refurbished iPhones for sale</h2>
@@ -54,8 +74,8 @@
           <span class="px-5 text-sm text-gray-600">24 results</span>
         </div>
         <div
-          class="grid min-w-full grid-cols-1 gap-6 px-5 md:grid-cols-4 md:px-4"
-        >
+          class="grid min-w-full grid-cols-1 gap-6 px-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-4"
+        > 
           <div
             class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
           >
@@ -351,6 +371,9 @@ export default {
   },
   methods: {
     toggle() {
+      this.open = !this.open;
+    },
+    toggleFilters() {
       this.open = !this.open;
     },
   },

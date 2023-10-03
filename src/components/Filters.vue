@@ -49,11 +49,9 @@ const brands = [
 </script>
 
 <template>
-  <div class="hidden px-3 py-4 md:block !min-w-[300px]">
-    <div class="text-sm text-gray-400">
-      <a href="/">Home</a> > <a href="/buy">Buy</a> >
-      <a href="/buy/apple" class="text-black">Apple</a>
-    </div>
+ 
+  <div class="hid den px-3 py-4 md:b lock !min-w-[300px]">
+   
 
     <div class="flex flex-col w-full mt-3">
       <Disclosure>
