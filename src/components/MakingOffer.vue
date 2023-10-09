@@ -46,7 +46,10 @@
           <hr />
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2 py-2">
-              <Switch />
+              <img
+                class="w-8 h-8"
+                src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/Group-1.png"
+                alt="">
               <span class="text-lg">Fast, free delivery 2-4 working days</span>
             </div>
             <span class="text-lg font-semibold"> Free </span>

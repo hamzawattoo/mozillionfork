@@ -3,24 +3,27 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
 </script>
 <template>
   <section>
-    <div class="my-12 text-center">
-      <h1 class="block p-0 m-0 text-2xl font-light">Best-Selling Phones</h1>
+    <div class="my-12 text-center text-gray-800 flex items-center justify-between sm:px-32 px-4">
+      <h1 class="block p-0 m-0 text-2xl font-light flex-grow">Best-Selling Phones</h1>
+      <a href="">
+        <p class="text-lg font-light ">View all</p>
+      </a>
     </div>
     <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 items-center  px-8 xl:px-24 pb-12">
   
     <!-- Use v-for to create cards for each item in the cardsData array -->
     <div
-      class="flex flex-col px-4 py-4 text-center justify-between bg-white rounded-xl min-h-[30vh] md:min-h-[55vh]"
+      class="flex flex-col px-4 py-4 text-center justify-between bg-white rounded-xl min-h-[30vh] md:min-h-[55vh] max-h-[55vh]"
       v-for="(card, index) in cardsData"
       :key="index"
     >
       <div class="block pb-5 text-2xl font-thin text-gray-800">
         <a href="#">{{ card.title }}</a>
       </div>
-      <div class="flex items-center justify-center my-12">
+      <div class="flex items-center justify-center py-6">
         <a href="#">
           <!-- Use card.image as the src attribute -->
-          <img class="w-28 md:w-56 max-h-[300px] object-contain" :src="card.image" alt="img" />
+          <img class="w-28 md:w-48 max-h-[250px] object-contain" :src="card.image" alt="img" />
         </a>
       </div>
       <div class="apple-tx-buy">

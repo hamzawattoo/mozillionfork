@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
             <li class="text-white">
               <a href="https://www.mozillion.com/resources/help">Support</a>
             </li>
@@ -63,7 +63,7 @@
           </ul>
         </div>
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 ">
+          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
             <li class="text-[#fff]">
               <a href="https://www.mozillion.com/legal">legel</a>
             </li>
@@ -119,7 +119,7 @@
                 </div>
               </div>
               <div class="flex items-center mt-4">
-                <label class="block pl-6">
+                <label class="block">
                   <input
                     type="checkbox"
                     name="privacy_accept"

@@ -11,7 +11,7 @@ import nokia from "../../images/nokia_acjr6e.webp";
   <section>
     <div class="mt-12 bg-white border">
       <div
-        class="grid items-center justify-center grid-cols-2 px-5 py-4 mx-auto mt-5 bg-white md:grid-cols-6 space-y-5 md:space-x-5 max-w-7xl"
+        class="grid items-center justify-center grid-cols-2 px-5 py-6 mx-auto bg-white md:grid-cols-6 space-y-5 md:space-y-0 md:space-x-5 max-w-7xl"
       >
         <div class="h-12 px-4 sell-mobile-logo w-30">
           <a href="#">

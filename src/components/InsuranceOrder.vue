@@ -84,7 +84,7 @@
         <div class="">
           <div class="grid grid-cols-1 space-y-4 lg:grid-cols-4">
             <div class="flex items-center gap-2">
-              <i class="">
+              <i class="h-20">
                 <img
                   class="object-cover w-full h-full"
                   src="https://res.cloudinary.com/mozillion/image/upload/q_100/v1669253561/piggy-bank_qlr99n.svg"
@@ -97,8 +97,8 @@
               </span>
             </div>
             <div class="flex items-center gap-2">
-              <i
-                ><img
+              <i class="h-20"
+                ><img class="object-cover w-full h-full"
                   src="https://res.cloudinary.com/mozillion/image/upload/q_100/v1669253561/globe_liinj1.svg"
                   alt="globe icon"
               /></i>
@@ -108,8 +108,8 @@
               >
             </div>
             <div class="flex items-center gap-2">
-              <i
-                ><img
+              <i class="h-20"
+                ><img class="object-cover w-full h-full"
                   src="https://res.cloudinary.com/mozillion/image/upload/q_100/v1669253561/check-circle_afbzew.svg"
                   alt="tick icon"
               /></i>
@@ -120,8 +120,8 @@
               </span>
             </div>
             <div class="flex items-center gap-2">
-              <i
-                ><img
+              <i class="h-20"
+                ><img class="object-cover w-full h-full"
                   src="https://res.cloudinary.com/mozillion/image/upload/q_100/v1669253561/phone-iphone_jjq11n.svg"
                   alt="phone icon"
               /></i>

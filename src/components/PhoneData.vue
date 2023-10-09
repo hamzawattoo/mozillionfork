@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#1f9fff]">
     <div
-      class="container flex items-center justify-between gap-12 !py-8 text-white"
+      class="container flex items-center justify-start gap-24 !py-5 text-white"
     >
       <h2 class="text-xl font-light md:text-2xl">
         New and refurbished. Tested and guaranteed.
@@ -84,7 +84,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -104,7 +104,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662630218/mpm5oi5yzys61lazptzm.png" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -124,7 +124,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662629153/pyouxn4cahqleboh7lqt.png" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -144,7 +144,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -164,7 +164,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662628004/m6zbd0dybnvvpxzaigap.png" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -184,7 +184,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1632465778/tgtbr8oblmiowfl9ptcm.png" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -204,7 +204,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -224,7 +224,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -244,7 +244,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -264,7 +264,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -284,7 +284,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">
@@ -304,7 +304,7 @@
             </div>
             <div class="flex items-center justify-center my-12">
               <a href="#">
-                <img class="h-36" :src="phone" alt="img" />
+                <img class="h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
             <div class="apple-tx-buy">

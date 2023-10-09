@@ -4,14 +4,14 @@ import login from "../components/login.vue";
 <template>
   <login />
   <div class="bg-blue-50">
-    <div class="container !px-0 !py-3">
+    <div class="px-5 Iphone14-main lg:px-28 py-4">
       <nav class="flex" aria-label="Breadcrumb">
         <ol role="list" class="flex items-center space-x-4">
           <li>
             <div>
               <a
                 href="#"
-                class="ml-4 text-sm font-light text-gray-500 hover:text-gray-700"
+                class="text-sm font-light text-gray-500 hover:text-gray-700"
                 >Home</a>
             </div>
           </li>
@@ -335,8 +335,8 @@ import login from "../components/login.vue";
           <div class="">
             <p class="my-4 text-lg text-gray-800">Mozillion assurance.</p>
             <div class="flex gap-20">
-              <div class="flex gap-6">
-                <div class="flex items-center">
+              <div class="flex gap-6 w-[50%]">
+                <div class="flex items-center w-12">
                   <img
                     src="https://res.cloudinary.com/mozillion/image/upload/v1623322553/secured_cu5u9x.svg"
                     alt="secured"
@@ -349,8 +349,8 @@ import login from "../components/login.vue";
                   </p>
                 </div>
               </div>
-              <div class="flex gap-6">
-                <div class="flex items-center">
+              <div class="flex gap-6 w-[50%]">
+                <div class="flex items-center w-12">
                   <img
                     src="https://res.cloudinary.com/mozillion/image/upload/v1623322296/covered_jkazef.svg"
                   />
@@ -364,8 +364,8 @@ import login from "../components/login.vue";
               </div>
             </div>
             <div class="flex gap-20 mt-6">
-              <div class="flex gap-6">
-                <div class="flex items-center">
+              <div class="flex gap-6 w-[50%]">
+                <div class="flex items-center w-12">
                   <img
                     src="https://res.cloudinary.com/mozillion/image/upload/v1623326827/warranty_bugqeo.svg"
                     alt="covered"
@@ -378,10 +378,10 @@ import login from "../components/login.vue";
                   </p>
                 </div>
               </div>
-              <div class="flex gap-6">
-                <div class="flex items-center">
+              <div class="flex gap-6 w-[50%]">
+                <div class="flex items-center w-12">
                   <img
-                    src="https://res.cloudinary.com/mozillion/image/upload/v1623326827/warranty_bugqeo.svg"
+                    src="https://res.cloudinary.com/mozillion/image/upload/v1623322450/inspected_sw2mlm.svg"
                     width="60px"
                     alt="inspected"
                   />
@@ -408,12 +408,12 @@ import login from "../components/login.vue";
                 @click="changeEnable(!enabled)"
                 v-model="enabled"
                 :class="enabled ? 'bg-[#6383e4]' : 'bg-[#6383e4]'"
-                class="relative inline-flex h-[26px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                class="relative inline-flex h-[22px] w-[45px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
                 <span
                   aria-hidden="true"
-                  :class="enabled ? 'translate-x-9' : 'translate-x-0'"
-                  class="pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+                  :class="enabled ? 'translate-x-6' : 'translate-x-0'"
+                  class="pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
                 />
               </Switch>
               <span class="text-xl text-white">Buy Now</span>

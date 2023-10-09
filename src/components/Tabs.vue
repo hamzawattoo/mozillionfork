@@ -42,15 +42,16 @@ const brandv = [
     >
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent hover:bg-white hover:bg-opacity-10 font-extralight hover:border-white"
+          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
         >
           Phones
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[90vw] 2xl:min-w-[80vw] h-[80vh] w-full  -left-40 bg-blue-500 top-[69px]"
+          class="absolute hidden group-hover:block z-50 min-w-[90vw] 2xl:min-w-[80vw] h-[80vh] w-full  -left-40 bg-blue-500 top-[79px]"
         >
           <div class="flex justify-start xl:justify-between">
-            <div class="px-8 py-2 min-w-fit">
+            <div class="flex items-start">
+               <div class="px-8 py-2 min-w-fit">
               <div class="flex flex-col">
                 <div
                   class="space-y-6 border-b py-4"
@@ -64,14 +65,16 @@ const brandv = [
               </div>
             </div>
             <carousel />
-            <div class="px-5 py-4 w-96">
+            </div>
+           
+            <div class="px-5 py-4 hidden xl:block">
               <div
-                class="flex flex-col justify-between px-4 py-4 text-center w-full max-w-xl bg-white rounded-xl  min-h-[50vh]"
+                class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xl bg-white rounded-xl  "
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
                 </div>
-                <div class="flex items-center justify-center my-12">
+                <div class="flex items-center justify-center my-3">
                   <a href="#">
                     <img class="w-56" :src="phone" alt="img" />
                   </a>
@@ -91,15 +94,15 @@ const brandv = [
       </div>
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 hover:bg-white hover:bg-opacity-10 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
         >
           Tablets
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[90vw] xl:min-w-[70vw] min-h-[80vh] -left-[400px] xl:-left-[300px] bg-blue-500 h-[700px] top-[69px]"
+          class="absolute hidden group-hover:block z-50 min-w-[90vw] xl:min-w-[55vw] min-h-[80vh] -left-[400px] xl:-left-[400px] bg-blue-500 h-[700px] top-[79px]"
         >
-          <div class="grid grid-cols-4 gap-6 px-8 py-6">
-            <div>
+          <div class="grid grid-cols-3 gap-6 px-8 py-6">
+            <div class="max-w-[200px]">
               <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
               <div
                 class="space-y-2 border-b py-1.5"
@@ -115,7 +118,7 @@ const brandv = [
                 </a>
               </div>
             </div>
-            <div>
+            <div class="max-w-[200px]">
               <h2 class="text-xl font-semibold text-white">Apple phones</h2>
               <div
                 class="space-y-4 border-b py-3"
@@ -131,8 +134,8 @@ const brandv = [
                 </a>
               </div>
             </div>
-            <div>
-              <h2 class="font-semibold text-white">Google Phones</h2>
+            <div class="max-w-[200px]">
+              <h2 class="text-xl font-semibold text-white">Google Phones</h2>
               <div
                 class="space-y-2 border-b py-3"
                 v-for="(brand, index) in brands"
@@ -147,16 +150,16 @@ const brandv = [
                 </a>
               </div>
             </div>
-            <div>
+            <div class="col-span-2 px-5 py-4 hidden xl:bl ock">
               <div
-                class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl max-w-xl w-full min-h-[50vh]"
+                class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xs bg-white rounded-xl  "
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
                 </div>
-                <div class="flex items-center justify-center my-12">
+                <div class="flex items-center justify-center my-3">
                   <a href="#">
-                    <img class=" w-56" :src="phone" alt="img" />
+                    <img class="w-56" :src="phone" alt="img" />
                   </a>
                 </div>
                 <div class="apple-tx-buy">
@@ -174,15 +177,16 @@ const brandv = [
       </div>
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 hover:bg-white hover:bg-opacity-10 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
         >
           Sell
         </button>
         <div
-          class="absolute hidden lg:hidden group-hover:block z-50 w-[60vw] -left-[600px] bg-blue-500 h-[700px] top-[69px]"
+          class="absolute hidden lg:hidden group-hover:block z-50 w-[80vw] 2xl:w-[50vw] -right-[300px] 2xl:-left-[600px] bg-blue-500 h-[700px] top-[79px]"
         >
-          <div class="grid grid-cols-3 gap-6 p-4">
-            <div>
+          <div class="flex items-start justify-between gap-6 px-8 py-6">
+            <div class="flex items-start justify-start gap-x-12">
+              <div class="max-w-[200px]">
               <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
               <div
                 class="space-y-2 border-b py-3"
@@ -198,7 +202,7 @@ const brandv = [
                 </a>
               </div>
             </div>
-            <div>
+            <div class="max-w-[200px]">
               <h2 class="text-xl font-semibold text-white">Apple phones</h2>
               <div
                 class="space-y-2 border-b py-3"
@@ -214,15 +218,18 @@ const brandv = [
                 </a>
               </div>
             </div>
+            </div>
+          
 
-            <div class="cols-span-2 text-end">
+            <div class=" text-end">
+              <div class="px-5 py-4 hidden xl:block">
               <div
-                class="flex flex-col justify-end px-4 py-4 text-center bg-white rounded-xl max-w-xl  min-h-[50vh]"
+                class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xl bg-white rounded-xl  "
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
                 </div>
-                <div class="flex items-center justify-center my-12">
+                <div class="flex items-center justify-center my-3">
                   <a href="#">
                     <img class="w-56" :src="phone" alt="img" />
                   </a>
@@ -236,6 +243,7 @@ const brandv = [
                   >
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

@@ -43,3 +43,6 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+.bg-blue-500{
+  background: #1f9fff !important;
+}

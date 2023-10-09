@@ -1,5 +1,41 @@
 <template>
   <section>
+    <div class="px-2 lg:!px-0 !py-2 container">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol role="list" class="flex items-center space-x-4">
+          <li>
+            <div>
+              <a
+                href="#"
+                class="text-sm font-light text-gray-500 hover:text-gray-700"
+                >Home</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <a
+                href="#"
+                class="ml-2 text-sm font-light text-gray-500 hover:text-gray-700"
+                >Buy with accessories</a
+              >
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <h1 class="text-[26px] text-gray-800">Choose Your Discounted Accessories</h1>
+    </div>
     <div class="px-4">
       <div
         class="bg-white lg:space-x-8 rounded-2xl shadow-lg !my-6 px-2 md:!px-8 !py-8 container"
@@ -24,7 +60,7 @@
             >
               <p class="text-xl font-semibold">{{ product.name }}</p>
               <div>
-                <p class="text-gray-700 text-lg font-medium pt-3 pb-1.5">
+                <p class="text-gray-700 text-[15px] font-medium pt-3 pb-1.5">
                   {{ product.description }}
                 </p>
               </div>
