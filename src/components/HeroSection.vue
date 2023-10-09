@@ -45,7 +45,7 @@ import removebg from "../../images/download-removebg-preview.png";
           </div>
         </div>
         <div class="absolute bottom-0 right-10">
-          <img class="h-72 md:h-auto" :src="removebg" alt="" />
+          <img class=" h-[35vh] md:h-[60vh]" :src="removebg" alt="" />
         </div>
       </div>
     </div>

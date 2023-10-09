@@ -3,11 +3,11 @@
 <template>
   <div class="carousel">
     <div
-      class="flex items-center gap-2 overflow-x-scroll no-scrollbar w-[350px] 2xl:w-[800px] carousel__container scroll-behavior: smooth; transition: all 0.5s ease-in-out;"
+      class="flex items-center gap-2 overflow-x-scroll no-scrollbar w-[600px] 2xl:w-[750px] carousel__container scroll-behavior: smooth; transition: all 0.5s ease-in-out;"
     >
       <div class="flex gap-2 carousel__item">
         <div class="">
-          <div class="px-8 py-2 w-80">
+          <div class="px-8 py-2 w-64">
             <h2 class="text-xl font-semibold text-white">Apple Phones</h2>
             <div
               class="space-y-2 border-b py-3"
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div>
-          <div class="px-8 py-2 w-80">
+          <div class="px-8 py-2 w-64">
             <h2 class="text-xl font-semibold text-white">Samsung Phones</h2>
             <div
               class="space-y-2 border-b py-3"
@@ -45,7 +45,7 @@
       </div>
       <div class="flex gap-2">
         <div>
-          <div class="px-8 py-2 w-80">
+          <div class="px-8 py-2 w-64">
             <h2 class="text-xl font-semibold text-white">Google Phones</h2>
             <div
               class="space-y-2 border-b py-3"

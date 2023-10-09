@@ -15,9 +15,6 @@
           <p class="font-extralight text-gray-400 text-xl">Iphone 14</p>
           <p class="font-extralight text-gray-400 text-xl">Iphone 13 Pro Max</p>
           <p class="font-extralight text-gray-400 text-xl">Iphone 13 pro</p>
-          <p class="font-extralight text-gray-400 text-xl">Iphone 13</p>
-          <p class="font-extralight text-gray-400 text-xl">Iphone 14 Pro Max</p>
-
           <!-- Other items -->
           <div v-if="!openMoreOne" class="flex gap-1" @click="addMoreFirst">
             <p class="text-gray-500 text-base">More</p>
@@ -35,10 +32,6 @@
             <p class="font-extralight text-gray-400 text-xl">Iphone 13</p>
             <p class="font-extralight text-gray-400 text-xl">Iphone 14 Pro Max</p>
             <p class="font-extralight text-gray-400 text-xl">Iphone 14 pro</p>
-            <p class="font-extralight text-gray-400 text-xl">Iphone 14</p>
-            <p class="font-extralight text-gray-400 text-xl">Iphone 13 Pro Max</p>
-            <p class="font-extralight text-gray-400 text-xl">Iphone 13 pro</p>
-
             <!-- Additional items -->
           </div>
           <div v-if="openMoreOne" class="flex gap-1" @click="addMoreFirst">
@@ -57,8 +50,6 @@
           <p class="font-extralight text-gray-400 text-xl">Iphone 14</p>
           <p class="font-extralight text-gray-400 text-xl">Iphone 13 Pro Max</p>
           <p class="font-extralight text-gray-400 text-xl">Iphone 13 pro</p>
-          <p class="font-extralight text-gray-400 text-xl">Iphone 13</p>
-          <p class="font-extralight text-gray-400 text-xl">Iphone 14 Pro Max</p>
 
           <!-- Other items -->
           <div v-if="!openMoreTwo" class="flex gap-1" @click="addMoreSecond">

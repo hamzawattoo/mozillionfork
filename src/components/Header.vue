@@ -2,7 +2,7 @@
 
 <template>
   <nav class="sticky top-0 z-50 border-b bg-blue ">
-    <div class="flex items-center justify-between gap-x-3 px-2.5 md:px-[30px] py-4  lg:items-center">
+    <div class="flex items-center justify-between gap-x-3 px-2.5 py-2 md:px-[30px] lg:items-center">
       <div
         class="flex flex-col items-left justify-between lg:flex-row 2xl:gap-x-16 mt-3"
       >
@@ -180,17 +180,17 @@
         <div class="relative flex items-center justify-between hidden gap-4 2xl:gap-[50px] lg:flex">
           <div class="group">
             <a
-              class="relative flex items-center h-full  text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight"
+              class="relative flex items-center h-full text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight border-b-2 border-transparent hover:border-white py-4"
               href=""
             >
               How  its works
             </a>
             <div
-              class="absolute z-10 flex flex-col w-56 px-4 py-2 transition ease-out scale-0 bg-blue-500 group-hover:scale-100 top-14"
+              class="absolute z-10 flex flex-col w-56 px-4 py-2 transition ease-out scale-0 bg-blue-500 group-hover:scale-100 top-16 font-light"
             >
               <a
                 href="#"
-                class="py-2 text-sm text-white border-b border-gray-300"
+                class="py-2 text-sm text-white border-b border-gray-300 font-light"
                 >New to Mozillion</a
               >
               <a
@@ -212,13 +212,13 @@
           </div>
           <div class="group">
             <a
-              class="relative flex items-center  text-lg text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight"
+              class="relative flex items-center  text-lg text-white lg:text-[1.50vw] 2xl:text-[1vw] font-extralight border-b-2 border-transparent hover:border-white py-4"
               href=""
             >
               Help & Resources
             </a>
             <div
-              class="absolute z-10 flex flex-col w-56 px-4 py-2 transition ease-out scale-0 bg-blue-500 group-hover:scale-100 top-14"
+              class="absolute z-10 flex flex-col w-56 px-4 py-2 transition ease-out scale-0 bg-blue-500 group-hover:scale-100 top-16 font-light"
             >
               <a
                 href="#"
