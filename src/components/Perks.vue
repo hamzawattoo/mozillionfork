@@ -12,7 +12,7 @@ import klarna from "../../images/klarna.svg";
 <template>
   <section>
     <div class="bg-white">
-      <div class="flex px-5 py-1 mx-auto space-x-5 bg-white md:max-w-[1400px]">
+      <div class="flex justify-center px-5 py-5 mx-auto space-x-5 bg-white md:max-w-[1400px]">
         <div class="items-center hidden md:w-80 lg:flex">
           <div class="max-w-[60px] max-h-[80px] w-full  ">
             <img class="w-full h-auto object-cover" :src="covered" alt="img" />
@@ -201,13 +201,13 @@ import klarna from "../../images/klarna.svg";
             </div>
             <!-- Business Info -->
             <div id="reviews-summary" class="tp-widget-businessinfo">
-              <div class="">
+              <div class="text-xs sm:text-sm">
                 <span class="font-semibold text-gray-800">TrustScore</span>
                 <strong>4.8</strong>
               </div>
-              <div class="">
+              <div class="text-xs sm:text-sm">
                 <strong>1,388</strong>
-                <span class="text-sm text-gray-500">reviews</span>
+                <span class=" text-gray-500">reviews</span>
               </div>
             </div>
           </a>
@@ -232,13 +232,14 @@ import klarna from "../../images/klarna.svg";
             </p>
           </div>
         </div>
-        <div class="w-[50%] md:w-80 md:flex items-center gap-3">
-          <div class="max-w-[80px] max-h-[80px] w-full">
+        <div class="w-[50%] md:w-80 flex flex-col items-center">
+          <div class="max-w-[60px] md:max-w-[80px] md:max-h-[80px] w-full">
             <img class="w-full h-auto object-cover" :src="klarna" alt="img" />
           </div>
-          <div class="md:w-50 md:pl-5 hm-text">
-            <h2 class="font-semibold text-gray-800">Flexible</h2>
-            <p class="text-sm text-gray-500">
+          
+          <div class="md:w-50 text-center max-w-[150px]">
+            <h2 class="font-semibold text-gray-800 text-sm md:text-md">Flexible</h2>
+            <p class="text-xs sm:text-sm text-gray-500">
               Buy now or spread the cost over 3-24 months
             </p>
           </div>

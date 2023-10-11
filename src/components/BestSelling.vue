@@ -4,9 +4,9 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
 <template>
   <section>
     <div class="my-12 text-center text-gray-800 flex items-center justify-between sm:px-32 px-4">
-      <h1 class="block p-0 m-0 text-2xl font-light flex-grow">Best-Selling Phones</h1>
+      <h1 class="block p-0 m-0 text-lg lg:text-2xl font-normal md:font-light flex-grow ml-6">Best-Selling Phones</h1>
       <a href="">
-        <p class="text-lg font-light ">View all</p>
+        <p class="text-sm lg:text-lg font-light ">View all</p>
       </a>
     </div>
     <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 items-center  px-8 xl:px-24 pb-12">
@@ -17,7 +17,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
       v-for="(card, index) in cardsData"
       :key="index"
     >
-      <div class="block pb-5 text-2xl font-thin text-gray-800">
+      <div class="block pb-5 md:text-lg lg:text-2xl font-thin text-gray-800">
         <a href="#">{{ card.title }}</a>
       </div>
       <div class="flex items-center justify-center py-6">
@@ -27,9 +27,9 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
         </a>
       </div>
       <div class="apple-tx-buy">
-        <p>Buy from</p>
+        <p class="text-sm md:text-base">Buy from</p>
         <a
-          class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
+          class="block w-full px-0 py-2 text-sm md:text-base text-white bg-blue-700 rounded-full"
           :href="card.link"
           >£{{ card.price }}</a
         >
