@@ -4,26 +4,26 @@
   <nav class="sticky top-0 z-50 border-b bg-blue ">
     <div class="flex items-center justify-between gap-x-3 px-2.5 md:px-[30px] lg:items-center">
       <div
-        class="flex flex-col items-left justify-between lg:flex-row 2xl:gap-x-16 mt-3"
+        class="flex flex-col items-left justify-between lg:flex-row lg:gap-x-5 2xl:gap-x-16 mt-3"
       >
-        <div class="flex flex-col items-baseline 2xl:flex-row 2xl:gap-x-8">
+        <div class="flex flex-col items-baseline xl:flex-row xl:gap-x-5">
           <div class="">
             <a class="" href="https://www.mozillion.com/">
               <img
-                class="w-32 2xl:w-40 h-auto 2xl:h-7 object-contain "
+                class="w-36 2xl:w-40 h-auto 2xl:h-7 object-contain "
                 src="https://res.cloudinary.com/mozillion/image/upload/v1623322043/logo_rvaicy.svg"
                 alt="Mozillion Logo"
               />
             </a>
           </div>
           <div
-            class="hidden text-sm font-thin text-white lg:flex xl:text-lg whitespace-nowrap"
+            class="hidden text-sm font-thin text-white lg:flex text-sm 2xl:text-lg whitespace-nowrap"
           >
             Mobile's first marketplace
           </div>
         </div>
-        <div class="flex items-center text-white  mt-1 md:ml-3">
-          <span class="mt-0 ml-0 mr-3 text-lg"> Excellent </span>
+        <div class="flex items-center text-white  mt-2 lg:mt-0 lg:ml-6">
+          <span class="mt-0 ml-0 mr-3 text-sm 2xl:text-lg"> Excellent </span>
           <svg
             class="w-12"
             role="img"
@@ -116,7 +116,7 @@
               ></path>
             </g>
           </svg>
-          <div class="hidden xl:block ml-2">
+          <div class="hidden xl:block ml-2 text-xs 2xl:text-lg">
             <div>
               <svg
                 class=""
@@ -124,7 +124,7 @@
                 aria-labelledby="trustpilotLogo-1v5gi0h4n2z"
                 viewBox="0 0 126 31"
                 xmlns="http://www.w3.org/2000/svg"
-                style=" width: 70px; left: 0; top: 0"
+                style=" width: 60px; left: 0; top: 0"
               >
                 <title style="color: white" id="trustpilotLogo-1v5gi0h4n2z">
                   Trustpilot
@@ -156,7 +156,7 @@
           class="flex items-center justify-between hidden px-3 py-2 bg-white border lg:flex rounded-full"
         >
           <input
-            class="pl-2 pr-16 2xl:py-1 bg-transparent focus:outline-none max-w-[13rem]"
+            class="pl-2 pr-16 xl:py-1 bg-transparent focus:outline-none max-w-[13rem] xl:max-w-[15rem]"
             type="search"
             placeholder="Search"
           />
@@ -177,7 +177,7 @@
             </svg>
           </span>
         </div>
-        <div class="relative flex items-center justify-between hidden gap-4 2xl:gap-[50px] lg:flex">
+        <div class="relative flex items-center justify-between hidden gap-4 xl:gap-[30px] lg:flex">
           <div class="group relative">
             <a
               class=" flex items-center h-full text-white text-[1.25] 2xl:text-[1vw] font-extralight border-b-2 border-transparent hover:border-white py-6"

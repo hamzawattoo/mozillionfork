@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="px-5 py-4 mt-12 bg-white border-t md:px-24 text-lg	">
+    <div class="mt-12 bg-white border-t container !p-5 text-lg	">
       <div class="brand-content">
         <h2 class="mb-4 font-bold">The brands we offer:</h2>
         <h3 class="mb-4 font-bold text-blue-500 my-5 text-sm md:text-base">

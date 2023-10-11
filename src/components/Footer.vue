@@ -2,7 +2,7 @@
 
 <template>
   <footer class="relative text-white bg-[#102133] py-5 ">
-    <div class="  container">
+    <div class="  container !px-8 2xl:!px-4">
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-6 pb-14">
         <div class="md:col-span-1">
           <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
@@ -84,10 +84,10 @@
           </ul>
         </div>
         <div
-          class="lg:col-span-3 col-span-1 xl:px-24 px-2 md:py-6 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[50%] md:bg-blue-600 md:rounded-bl-[60px] xl:rounded-bl-[300px]"
+          class="lg:col-span-3 col-span-1 xl:pl-24 xl:pr-6 px-2 md:pb-6 md:pt-12 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[50%] md:bg-[#2d58db] md:rounded-bl-[60px] xl:rounded-bl-[200px]"
         >
           <div class="">
-            <h3 class="md:text-[30px] text-[20px] text-[#fff]">
+            <h3 class="md:text-[20px] 2xl:text-[30px] text-[#fff]">
               Subscribe to Our Newsletter
             </h3>
             <form
@@ -126,7 +126,7 @@
                     id="privacy_accept"
                     class="mr-2 w-[20px] h-[15px]"
                   />
-                  <span class="md:text-[18px] text-[13px] text-[#fff]"
+                  <span class="2xl:text-[18px] text-[13px] text-[#fff]"
                     >I have read and accept privacy and policy. Please add me to
                     your newsletter list.</span
                   >
@@ -135,7 +135,7 @@
               <div class="mt-4 md:flex md:justify-end">
                 <button
                   type="submit"
-                  class="md:block-none block md:w-auto w-full md:bg-[#102133] bg-blue-600 hover:bg-blue-950 text-white px-6 py-2 rounded-md hover:bg-[#102133] focus:outline-none focus:ring focus:ring-blue-200"
+                  class="md:block-none block md:w-auto w-full md:bg-[#102133] bg-blue-600 hover:bg-blue-950 text-white px-8 py-2 rounded-full hover:bg-[#102133] focus:outline-none focus:ring focus:ring-blue-200"
                   name="submit_newsletter"
                   id="submit_newsletter"
                 >

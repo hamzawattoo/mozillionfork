@@ -9,9 +9,9 @@ import nokia from "../../images/nokia_acjr6e.webp";
 
 <template>
   <section>
-    <div class="mt-12 bg-white border">
+    <div class="my-16 bg-white border">
       <div
-        class="grid items-center justify-center grid-cols-2 px-5 py-6 mx-auto bg-white md:grid-cols-6 space-y-5 md:space-y-0 md:space-x-5 max-w-7xl"
+        class="grid items-start justify-center grid-cols-2 px-5 py-6 mx-auto bg-white md:grid-cols-6 gap-y-5 md:space-y-0 space-x-0 md:space-x-5 max-w-[1400px]"
       >
         <div class="h-12 px-4 sell-mobile-logo w-30">
           <a href="#">

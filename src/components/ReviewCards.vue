@@ -1,12 +1,12 @@
 <template>
-  <div class="flex items-center justify-center m-auto container !max-w-[1500px] !pt-10 !pb-2">
+  <div class="flex items-center justify-center m-auto max-w-[1400px] px-24 !pt-10 !pb-2">
     <swiper
     :breakpoints="{
-      300: { slidesPerView: 1 },
-      600: { slidesPerView: 2 },
-      900: { slidesPerView: 3 },
-      1200: { slidesPerView: 4 },
-      1500: { slidesPerView: 5 },
+      250: { slidesPerView: 1 },
+      500: { slidesPerView: 2 },
+      750: { slidesPerView: 3 },
+      1000: { slidesPerView: 4 },
+      1250: { slidesPerView: 5 },
     }"
     :initial-slide="1"
     :space-between="10"
@@ -14,7 +14,7 @@
     :loop="true">
 
       <swiper-slide>
-        <div class="px-4 py-4 bg-white lg:  cursor-grab">
+        <div class="px-4 py-4 bg-white md:max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -129,8 +129,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold ">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold ">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -142,7 +142,7 @@
         </swiper-slide
       >
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -257,8 +257,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -270,7 +270,7 @@
         </swiper-slide>
 
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -385,8 +385,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -397,7 +397,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -512,8 +512,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -524,7 +524,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -639,8 +639,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -651,7 +651,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -766,8 +766,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -778,7 +778,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -893,8 +893,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -905,7 +905,7 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -1020,8 +1020,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -1032,7 +1032,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -1147,8 +1147,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>
@@ -1159,7 +1159,7 @@
         </div></swiper-slide
       >
       <swiper-slide>
-        <div class="px-4 py-4 bg-white   cursor-grab">
+        <div class="px-4 py-4 bg-white max-w-300px md:max-w-[250px] 2xl:max-w-xs">
           <div class="flex items-center gap-1">
             <div class="">
               <svg
@@ -1274,8 +1274,8 @@
             </div>
           </div>
           <div class="">
-            <p class="text-sm font-bold">Great</p>
-            <p class="text-sm font-light">
+            <p class="text-xs 2xl:text-sm font-bold">Great</p>
+            <p class="text-xs 2xl:text-sm font-light">
               Great phone, sent next day. Good condition 😊
             </p>
           </div>

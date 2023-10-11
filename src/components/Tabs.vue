@@ -250,7 +250,7 @@ const brandv = [
       </div>
      
     </div>
-    <div class="xl:text-[0.875vw] font-extralight text-white w-[19vw] pt-3 hidden text-white lg:flex pt-1">
+    <div class="2xl:text-[0.875vw] font-extralight text-white w-[19vw] pt-3 hidden text-white lg:flex pt-1">
         <div class="">
             <h2 class="font-bold">Sales Line:</h2>
           <p class="font-medium">Mon-Fri 9am-6pm</p>

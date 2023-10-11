@@ -9,17 +9,17 @@ import removebg from "../../images/download-removebg-preview.png";
         <div class="justify-between md:flex">
           <div class="">
             <h1
-              class="block text-lg font-medium text-white lg:text-4xl xl:text-5xl leading-15"
+              class="block text-lg font-medium text-white lg:text-4xl 2xl:text-5xl leading-15"
             >
               Buying or Selling a Phone?
             </h1>
             <p
-              class="pt-4 text-lg text-white sm:text-2xl lg:text-4xl xl:text-5xl leading-15 font-extralight"
+              class="pt-4 text-lg text-white sm:text-2xl lg:text-4xl 2xl:text-5xl leading-15 font-extralight"
             >
               Do it Risk free...
             </p>
             <p
-              class="hidden pt-6 text-sm font-thin leading-9 text-white md:flex lg:text-lg xl:text-2xl"
+              class="hidden pt-6 text-sm font-thin leading-9 text-white md:flex lg:text-lg 2xl:text-2xl"
             >
               Good-As-New Refurbished iPhones, plus a 24 month warranty - free
             </p>
@@ -30,14 +30,14 @@ import removebg from "../../images/download-removebg-preview.png";
           class="absolute lg:left-0 lg:right-0 z-10 flex items-center justify-center gap-x-4 bottom-5 lg:bottom-40"
         >
           <div
-            class="px-3 py-1 font-thin text-white bg-blue-500 hover:bg-transparent border-2 border-[#1f9fff] border-solid rounded-full text-uppercase lg:mr-10 lg:px-7 lg:py-2.5 lg:text-2xl"
+            class="px-3 py-1 font-thin text-white bg-blue-500 hover:!bg-transparent border-2 border-[#1f9fff] border-solid hover:border-white rounded-full text-uppercase lg:mr-10 lg:px-7 lg:py-2.5 text-xl 2xl:text-2xl"
           >
             <a class="" href=""
               >Buy a Phone</a
             >
           </div>
           <div
-            class="px-3 py-1 font-thin text-white bg-[#26D369] hover:bg-transparent border-2 border-[#26D369] border-solid rounded-full lg:px-7 lg:py-2.5 lg:text-2xl"
+            class="px-3 py-1 font-thin text-white bg-[#26D369] hover:bg-transparent border-2 border-[#26D369] border-solid hover:border-white rounded-full lg:px-7 lg:py-2.5 text-xl 2xl:text-2xl"
           >
             <a class="" href="https://www.mozillion.com/search-brand-sale/apple"
               >Sell a Phone</a
