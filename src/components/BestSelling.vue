@@ -13,7 +13,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
   
     <!-- Use v-for to create cards for each item in the cardsData array -->
     <div
-      class="flex flex-col px-4 py-4 text-center justify-between bg-white rounded-xl min-h-[30vh] md:min-h-[55vh] max-h-[55vh]"
+      class="flex flex-col px-4 py-4 text-center justify-between bg-white rounded-xl"
       v-for="(card, index) in cardsData"
       :key="index"
     >
@@ -23,7 +23,7 @@ import phone from "../../images/glifakqdvbpbeyrsrnil.webp";
       <div class="flex items-center justify-center py-6">
         <a href="#">
           <!-- Use card.image as the src attribute -->
-          <img class="w-28 md:w-48 max-h-[250px] object-contain" :src="card.image" alt="img" />
+          <img class="w-28 md:w-48 min-h-[250px] max-h-[250px] object-contain" :src="card.image" alt="img" />
         </a>
       </div>
       <div class="apple-tx-buy">
