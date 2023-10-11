@@ -3,7 +3,7 @@
 <template>
   <section>
     <div class="my-12 text-center">
-      <h1 class="text-3xl font-light text-gray-800">latest articles</h1>
+      <h1 class="block p-0 m-0 text-lg lg:text-2xl font-normal md:font-light">latest articles</h1>
     </div>
     <div class="grid grid-cols-1 gap-3 2xl:gap-6 px-5 2xl:px-24 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
       <div
@@ -21,11 +21,11 @@
         </a>
       </div>
       <div class="text-center">
-        <span class="font-extralight text-gray-800 text-lg">
+        <span class="block pb-5 md:text-sm lg:text-lg font-thin text-gray-800">
           <a :href="card.titleLink">{{ card.title }}</a>
         </span>
       </div>
-      <div class="block w-full px-0 py-2 text-lg font-extralight text-center text-white bg-blue-700 rounded-full">
+      <div class="block w-full px-0 py-2 text-sm md:text-lg font-extralight text-center text-white bg-blue-700 rounded-full">
         <a :href="card.readMoreLink" class="btn-custom">Read More</a>
       </div>
     </div>

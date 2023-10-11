@@ -9,7 +9,7 @@ import whatMobile from "../../images/what_mobile_xy0l4k.webp";
 <template>
   <section>
     <div class="my-12 text-center">
-      <h1 class="text-3xl font-medium text-gray-800">As seen in...</h1>
+      <h1 class="text-xl md:text-3xl font-medium text-gray-800">As seen in...</h1>
     </div>
 
     <div class="px-5 py-4 mt-2 bg-white">

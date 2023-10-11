@@ -42,12 +42,12 @@ const brandv = [
     >
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 h-full text-[1.25] 2xl:text-[1vw] border-b-2 border-transparent font-extralight hover:border-white"
         >
           Phones
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[90vw] 2xl:min-w-[80vw] h-[80vh] w-full  -left-40 bg-blue-500 top-[79px]"
+          class="absolute hidden group-hover:block z-50 min-w-[90vw] 2xl:min-w-[80vw] h-[80vh] w-full  -left-40 bg-blue-500 top-[100%]"
         >
           <div class="flex justify-start xl:justify-between">
             <div class="flex items-start">
@@ -67,7 +67,7 @@ const brandv = [
             <carousel />
             </div>
            
-            <div class="px-5 py-4 hidden xl:block">
+            <div class="px-5 py-4 hidden xl:block bg-blue-500">
               <div
                 class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xl bg-white rounded-xl  "
               >
@@ -94,12 +94,12 @@ const brandv = [
       </div>
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 h-full text-[1.25] 2xl:text-[1vw] border-b-2 border-transparent font-extralight hover:border-white"
         >
           Tablets
         </button>
         <div
-          class="absolute hidden group-hover:block z-50 min-w-[90vw] xl:min-w-[55vw] min-h-[80vh] -left-[400px] xl:-left-[400px] bg-blue-500 h-[700px] top-[79px]"
+          class="absolute hidden group-hover:block z-50 min-w-[90vw] xl:min-w-[55vw] min-h-[80vh] -left-[400px] xl:-left-[400px] bg-blue-500 h-[700px] top-[100%]"
         >
           <div class="grid grid-cols-3 gap-6 px-8 py-6">
             <div class="max-w-[200px]">
@@ -152,7 +152,7 @@ const brandv = [
             </div>
             <div class="col-span-2 px-5 py-4 hidden xl:bl ock">
               <div
-                class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xs bg-white rounded-xl  "
+                class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xs bg-white rounded-xl"
               >
                 <div class="block pb-5 text-2xl font-thin text-gray-800">
                   <a href="#">Apple iPhone 13 Pro</a>
@@ -177,12 +177,12 @@ const brandv = [
       </div>
       <div class="relative h-full group">
         <button
-          class="px-6 py-6 text-xl border-b-2 border-transparent font-extralight hover:border-white"
+          class="px-6 py-6 h-full text-[1.25] 2xl:text-[1vw] border-b-2 border-transparent font-extralight hover:border-white"
         >
           Sell
         </button>
         <div
-          class="absolute hidden lg:hidden group-hover:block z-50 w-[80vw] 2xl:w-[50vw] -right-[300px] 2xl:-left-[600px] bg-blue-500 h-[700px] top-[79px]"
+          class="absolute hidden lg:hidden group-hover:block z-50 w-[80vw] 2xl:w-[50vw] -right-[300px] 2xl:-left-[600px] bg-blue-500 h-[700px] top-[100%]"
         >
           <div class="flex items-start justify-between gap-6 px-8 py-6">
             <div class="flex items-start justify-start gap-x-12">
@@ -221,8 +221,8 @@ const brandv = [
             </div>
           
 
-            <div class=" text-end">
-              <div class="px-5 py-4 hidden xl:block">
+            <div class="text-end">
+              <div class="hidden xl:block bg-blue-500">
               <div
                 class="flex flex-col justify-between px-8 py-4 text-center w-full max-w-xl bg-white rounded-xl  "
               >
@@ -250,13 +250,12 @@ const brandv = [
       </div>
      
     </div>
-    <div class="text-lg font-extralight text-white w-[19vw] pt-3 hidden text-white lg:flex pt-1">
-      <div class="">
-          <h2 class="font-bold">Sales Line:</h2>
-        <p class="font-medium">Mon-Fri 9am-6pm</p>
-        <p class="font-medium">020 4516 3885</p>
-      </div>
-      
+    <div class="xl:text-[0.875vw] font-extralight text-white w-[19vw] pt-3 hidden text-white lg:flex pt-1">
+        <div class="">
+            <h2 class="font-bold">Sales Line:</h2>
+          <p class="font-medium">Mon-Fri 9am-6pm</p>
+          <p class="font-medium">020 4516 3885</p>
+        </div>
       </div>
   </div>
 </template>

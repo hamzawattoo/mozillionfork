@@ -3,10 +3,10 @@
     <div class="px-5 py-4 mt-12 bg-white border-t md:px-24 text-lg	">
       <div class="brand-content">
         <h2 class="mb-4 font-bold">The brands we offer:</h2>
-        <h3 class="mb-4 font-bold text-blue-500 my-5">
+        <h3 class="mb-4 font-bold text-blue-500 my-5 text-sm md:text-base">
           <a href="#">Apple iPhones</a>
         </h3>
-        <p>
+        <p class="text-sm md:text-base">
           The Apple iPhone is the most recognisable and popular brand on the
           market. Our marketplace offers all the latest new and second-hand
           iPhones to buy or sell, including the
@@ -36,7 +36,7 @@
         <div>
           <div v-if="open">
             <div
-              class="py-2"
+              class="py-2 text-sm md:text-base"
               v-for="(phoneBrand, index) in brands"
               :key="index"
             >
