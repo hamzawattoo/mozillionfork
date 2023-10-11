@@ -2,12 +2,12 @@
 import ReviewCards from "./ReviewCards.vue";
 </script>
 <template>
-  <section>
+  <section class="bg-[#e9eff4] py-4 pb-24">
     <div class="text-center">
       <div class="my-12 text-center">
         <h1 class="block p-0 m-0 text-xl md:text-2xl font-light">Mozillion Reviews</h1>
       </div>
-      <div class="flex items-center justify-center text-white  mt-1 md:ml-3">
+      <div class="flex items-center justify-center text-white mt-1 md:ml-3">
           <span class="mt-0 ml-0 mr-3 text-lg text-black"> Excellent </span>
           <svg
             class="w-12"
@@ -136,7 +136,7 @@ import ReviewCards from "./ReviewCards.vue";
     </div>
     <ReviewCards />
     <div class="flex flex-col items-center justify-center px-5">
-      <div class="flex items-center justify-center text-sm font-light">
+      <div class="flex items-center justify-center text-xs 2xl:text-sm font-light">
         <div id="rating-long" class="tp-widget-rating tp-widget-rating-long">
           Rated <strong>4.8</strong> / 5 based on
           <a
@@ -156,7 +156,7 @@ import ReviewCards from "./ReviewCards.vue";
       </div>
       <div
         class=""
-        style="position: relative; height: 0px; width: 80px; height: 5%"
+        style="position: relative; height: 0px; width: 70px; height: 5%"
       >
         <svg
           role="img"
