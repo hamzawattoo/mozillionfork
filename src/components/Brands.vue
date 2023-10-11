@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="mt-12 bg-white border-t container !p-5 text-lg	">
-      <div class="brand-content">
+    <div class="mt-12 bg-white border-t">
+      <div class="container !p-5 text-lg">
         <h2 class="mb-4 font-bold">The brands we offer:</h2>
         <h3 class="mb-4 font-bold text-blue-500 my-5 text-sm md:text-base">
           <a href="#">Apple iPhones</a>
