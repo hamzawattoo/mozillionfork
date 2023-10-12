@@ -408,12 +408,12 @@ import login from "../components/login.vue";
                 @click="changeEnable(!enabled)"
                 v-model="enabled"
                 :class="enabled ? 'bg-[#6383e4]' : 'bg-[#6383e4]'"
-                class="relative inline-flex h-[22px] w-[45px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                class="relative flex items-center py-[4px] h-[22px] w-[47px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
               >
                 <span
                   aria-hidden="true"
-                  :class="enabled ? 'translate-x-6' : 'translate-x-0'"
-                  class="pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+                  :class="enabled ? 'translate-x-6' : 'translate-x-[-1px]'"
+                  class="pointer-events-none inline-block h-[21px] w-[21px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
                 />
               </Switch>
               <span class="text-xl text-white">Buy Now</span>

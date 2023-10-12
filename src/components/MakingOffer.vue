@@ -46,26 +46,23 @@
           <hr />
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2 py-2">
-              <img
-                class="w-8 h-8"
-                src="https://www.mozillion.com/public/resources/wp-content/uploads/2023/09/Group-1.png"
-                alt="">
-              <span class="text-lg">Fast, free delivery 2-4 working days</span>
+             <span class="h-4 w-4 bg-gray-900 rounded-full"></span>
+              <span class="text-md">Fast, free delivery 2-4 working days</span>
             </div>
-            <span class="text-lg font-semibold"> Free </span>
+            <span class="text-md font-bold"> Free </span>
           </div>
         </div>
         <div>
           <h2 class="py-2 text-lg text-gray-400">Warranty & Returns</h2>
           <hr />
-          <div class="py-2 text-xl font-semibold">Free 20-months warranty</div>
+          <div class="py-2 text-md font-bold">Free 20-months warranty</div>
         </div>
         <div class="flex items-center justify-between py-2">
           <div>
-            <p class="text-lg font-medium">Total Price</p>
+            <p class="text-md font-medium">Total Price</p>
           </div>
           <div>
-            <p class="text-2xl font-light">£ {{ offer }}</p>
+            <p class="text-xl font-extralight">£ {{ offer }}</p>
           </div>
         </div>
       </div>

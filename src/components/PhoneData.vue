@@ -1,15 +1,15 @@
 <template>
   <div class="bg-[#1f9fff]">
     <div
-      class="container flex items-center justify-start gap-24 !py-5 text-white"
+      class="max-w-[1400px] mx-auto px-4 lg:px-12 2xl:px-4 2xl:max-w-[1700px] flex items-center justify-start gap-24 !py-5 text-white"
     >
-      <h2 class="text-xl font-light md:text-2xl">
+      <h2 class="text-sm lg:text-xl font-light md:text-2xl">
         New and refurbished. Tested and guaranteed.
       </h2>
-      <button class="text-white hover:text-black">Clear all</button>
+      <button class="text-xs lg:text-base text-white hover:text-black whitespace-nowrap">Clear all</button>
     </div>
   </div>
-  <div class="container text-sm text-gray-400 !mt-2">
+  <div class="max-w-[1400px] mx-auto px-4 lg:px-12 2xl:px-4 2xl:max-w-[1700px] text-sm text-gray-400 !mt-2">
       <a href="/">Home</a> > <a href="/buy">Buy</a> >
       <a href="/buy/apple" class="text-black">Apple</a>
     </div>
@@ -24,17 +24,17 @@
     </button>
     
   </div>
-  <div v-show="open" class="block md:hidden">
+  <div v-show="open" class="block md:hidden px-4">
       <Filters />
     </div>
 
-  <div class="container flex">
+  <div class="max-w-[1400px] mx-auto px-4 lg:px-12 2xl:px-4 2xl:max-w-[1700px] flex">
     <div class="hidden md:block">
       <Filters />
     </div>
     <div class="flex-1">
       <div class="flex flex-col items-center justify-center py-8 space-y-5">
-        <h2 class="text-4xl font-medium">Refurbished iPhones for sale</h2>
+        <h2 class="text-2xl 2xl:text-4xl font-medium">Refurbished iPhones for sale</h2>
         <div v-if="open" class="p-4 space-y-5">
           <p>
             Looking for a high-quality iPhone at a fraction of the cost of a new
@@ -77,17 +77,17 @@
           class="grid min-w-full grid-cols-1 gap-6 px-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-4"
         > 
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -97,17 +97,37 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662630218/mpm5oi5yzys61lazptzm.png" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662630218/mpm5oi5yzys61lazptzm.png" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
+              <p>Buy from</p>
+              <a
+                class="block w-full px-0 py-2 text-text-sm lg:text-base text-white bg-blue-700 rounded-full"
+                href="#"
+                >£639</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
+          >
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
+              <a href="#">Apple iPhone 13 Pro</a>
+            </div>
+            <div class="flex items-center justify-center my-6 2xl:my-12">
+              <a href="#">
+                <img class="h-[12rem] 2xl:h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662629153/pyouxn4cahqleboh7lqt.png" alt="img" />
+              </a>
+            </div>
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -117,17 +137,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662629153/pyouxn4cahqleboh7lqt.png" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -137,17 +157,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662628004/m6zbd0dybnvvpxzaigap.png" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -157,17 +177,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1662628004/m6zbd0dybnvvpxzaigap.png" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1632465778/tgtbr8oblmiowfl9ptcm.png" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -177,17 +197,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" src="https://res.cloudinary.com/mozillion/image/upload/f_auto,q_auto/v1632465778/tgtbr8oblmiowfl9ptcm.png" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -197,17 +217,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -217,17 +237,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -237,17 +257,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -257,17 +277,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
@@ -277,37 +297,17 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
+            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[40vh] 2xl:min-h-[50vh]"
           >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
+            <div class="block pb-5 text-md lg:text-xl 2xl:text-2xl font-thin text-gray-800">
               <a href="#">Apple iPhone 13 Pro</a>
             </div>
-            <div class="flex items-center justify-center my-12">
+            <div class="flex items-center justify-center my-6 2xl:my-12">
               <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
+                <img class="h-[12rem] 2xl:h-[14rem]" :src="phone" alt="img" />
               </a>
             </div>
-            <div class="apple-tx-buy">
-              <p>Buy from</p>
-              <a
-                class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
-                href="#"
-                >£639</a
-              >
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-between px-4 py-4 text-center bg-white rounded-xl min-h-[50vh]"
-          >
-            <div class="block pb-5 text-2xl font-thin text-gray-800">
-              <a href="#">Apple iPhone 13 Pro</a>
-            </div>
-            <div class="flex items-center justify-center my-12">
-              <a href="#">
-                <img class="h-[14rem]" :src="phone" alt="img" />
-              </a>
-            </div>
-            <div class="apple-tx-buy">
+            <div class="text-sm lg:text-base">
               <p>Buy from</p>
               <a
                 class="block w-full px-0 py-2 text-base text-white bg-blue-700 rounded-full"
