@@ -50,7 +50,7 @@ const brands = [
 
 <template>
  
-  <div class="hid den py-4 md:b lock !min-w-[300px]">
+  <div class="hid den py-4 md:b lock min-w-auto 2xl:!min-w-[300px]">
    
 
     <div class="flex flex-col w-full mt-3 space-y-1.5">

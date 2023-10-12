@@ -2,10 +2,10 @@
 
 <template>
   <footer class="relative text-white bg-[#102133] py-5 ">
-    <div class="  container !px-8 2xl:!px-4">
+    <div class="container !px-8 2xl:!px-4">
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-6 pb-14">
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
+          <ul class="mt-2 text-[13px] lg:text-[18px] text-gray-300 space-y-3">
             <li class="">
               <a
                 href="https://www.mozillion.com/new-to-mozillion"
@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
+          <ul class="mt-2 text-[13px] lg:text-[18px] text-gray-300 space-y-3">
             <li class="text-white">
               <a href="https://www.mozillion.com/resources/help">Support</a>
             </li>
@@ -63,7 +63,7 @@
           </ul>
         </div>
         <div class="md:col-span-1">
-          <ul class="mt-2 text-[14px] md:text-[18px] text-gray-300 space-y-3">
+          <ul class="mt-2 text-[13px] lg:text-[18px] text-gray-300 space-y-3">
             <li class="text-[#fff]">
               <a href="https://www.mozillion.com/legal">legel</a>
             </li>
@@ -84,7 +84,7 @@
           </ul>
         </div>
         <div
-          class="lg:col-span-3 col-span-1 xl:pl-24 2xl:pl-36 xl:pr-6 px-2 md:pb-6 md:pt-12 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[50%] md:bg-[#2d58db] md:rounded-bl-[60px] xl:rounded-bl-[200px] 2xl:rounded-bl-[300px]"
+          class="lg:col-span-3 col-span-1 xl:pl-24 2xl:pl-36 xl:pr-6 px-2 md:pb-6 md:pt-12 py-4 md:absolute md:top-0 md:right-0 md:h-270 md:w-[60%] lg:w-[50%] md:bg-[#2d58db] md:rounded-bl-[60px] xl:rounded-bl-[200px] 2xl:rounded-bl-[300px]"
         >
           <div class="">
             <h3 class="md:text-[20px] 2xl:text-[30px] text-[#fff]">
@@ -97,7 +97,7 @@
               action=""
             >
               <div
-                class="flex flex-col items-center justify-start mt-4 lg:flex-row gap-7"
+                class="flex flex-col items-center justify-start mt-4 sm:flex-row gap-7"
               >
                 <div class="w-full max-w-xs mb-2  md:mb-0">
                   <input
@@ -132,7 +132,7 @@
                   >
                 </label>
               </div>
-              <div class="mt-4 md:flex md:justify-end mr-24">
+              <div class="mt-4 md:flex md:justify-end 2xl:mr-24">
                 <button
                   type="submit"
                   class="md:block-none block md:w-auto w-full md:bg-[#102133] bg-blue-600 hover:bg-blue-950 text-white px-8 py-2 rounded-full hover:bg-[#102133] focus:outline-none focus:ring focus:ring-blue-200"

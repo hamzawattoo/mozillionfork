@@ -5,7 +5,7 @@ import removebg from "../../images/download-removebg-preview.png";
 <template>
   <section>
     <div class="bg-purple-800 min-h-[300px] md:min-h-[400px] lg:min-h-[600px] relative">
-      <div class="sm:pl-24 lg:pl-8 px-2 pt-12 mx-auto max-w-7xl">
+      <div class="sm:pl-24 lg:pl-0 px-2 pt-12 mx-auto max-w-7xl">
         <div class="justify-between md:flex">
           <div class="">
             <h1
